@@ -1,0 +1,1924 @@
+@prefix : <http://www.group15_KD_tr_onto#> .
+@prefix tr: <http://www.group15_KD_tr_onto/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.group15_KD_tr_onto> .
+
+<http://www.group15_KD_tr_onto> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://xmlns.com/foaf/0.1/has_name
+foaf:has_name rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.group15_KD_tr_onto/has_closest_train_station
+tr:has_closest_train_station rdf:type owl:ObjectProperty ;
+                             owl:inverseOf tr:has_closest_weatherstation ;
+                             rdf:type owl:InverseFunctionalProperty .
+
+
+###  http://www.group15_KD_tr_onto/has_closest_weatherstation
+tr:has_closest_weatherstation rdf:type owl:ObjectProperty ,
+                                       owl:FunctionalProperty ;
+                              rdfs:domain tr:Train_Station ;
+                              rdfs:range tr:Weatherstation .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.group15_KD_tr_onto/Air_Pressure
+tr:Air_Pressure rdf:type owl:Class ;
+                rdfs:subClassOf tr:Weather_Phenomenon .
+
+
+###  http://www.group15_KD_tr_onto/Date
+tr:Date rdf:type owl:Class .
+
+
+###  http://www.group15_KD_tr_onto/Precipitation
+tr:Precipitation rdf:type owl:Class ;
+                 rdfs:subClassOf tr:Weather_Phenomenon .
+
+
+###  http://www.group15_KD_tr_onto/Temperature
+tr:Temperature rdf:type owl:Class ;
+               rdfs:subClassOf tr:Weather_Phenomenon .
+
+
+###  http://www.group15_KD_tr_onto/Train_Company
+tr:Train_Company rdf:type owl:Class .
+
+
+###  http://www.group15_KD_tr_onto/Train_ID
+tr:Train_ID rdf:type owl:Class .
+
+
+###  http://www.group15_KD_tr_onto/Train_Station
+tr:Train_Station rdf:type owl:Class .
+
+
+###  http://www.group15_KD_tr_onto/Trip
+tr:Trip rdf:type owl:Class .
+
+
+###  http://www.group15_KD_tr_onto/Visibility
+tr:Visibility rdf:type owl:Class ;
+              rdfs:subClassOf tr:Weather_Phenomenon .
+
+
+###  http://www.group15_KD_tr_onto/Weather_Phenomenon
+tr:Weather_Phenomenon rdf:type owl:Class .
+
+
+###  http://www.group15_KD_tr_onto/Weatherstation
+tr:Weatherstation rdf:type owl:Class .
+
+
+###  http://www.group15_KD_tr_onto/Wind
+tr:Wind rdf:type owl:Class ;
+        rdfs:subClassOf tr:Weather_Phenomenon .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.group15_KD_tr_onto/2022-01-01
+<http://www.group15_KD_tr_onto/2022-01-01> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-01-02
+<http://www.group15_KD_tr_onto/2022-01-02> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-01-03
+<http://www.group15_KD_tr_onto/2022-01-03> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-01-04
+<http://www.group15_KD_tr_onto/2022-01-04> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-01-05
+<http://www.group15_KD_tr_onto/2022-01-05> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-01-06
+<http://www.group15_KD_tr_onto/2022-01-06> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-01-07
+<http://www.group15_KD_tr_onto/2022-01-07> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-01-08
+<http://www.group15_KD_tr_onto/2022-01-08> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-01-09
+<http://www.group15_KD_tr_onto/2022-01-09> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-01-10
+<http://www.group15_KD_tr_onto/2022-01-10> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-01-11
+<http://www.group15_KD_tr_onto/2022-01-11> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-01-12
+<http://www.group15_KD_tr_onto/2022-01-12> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-01-13
+<http://www.group15_KD_tr_onto/2022-01-13> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-01-14
+<http://www.group15_KD_tr_onto/2022-01-14> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-01-15
+<http://www.group15_KD_tr_onto/2022-01-15> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-01-16
+<http://www.group15_KD_tr_onto/2022-01-16> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-01-17
+<http://www.group15_KD_tr_onto/2022-01-17> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-01-18
+<http://www.group15_KD_tr_onto/2022-01-18> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-01-19
+<http://www.group15_KD_tr_onto/2022-01-19> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-01-20
+<http://www.group15_KD_tr_onto/2022-01-20> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-01-21
+<http://www.group15_KD_tr_onto/2022-01-21> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-01-22
+<http://www.group15_KD_tr_onto/2022-01-22> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-01-23
+<http://www.group15_KD_tr_onto/2022-01-23> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-01-24
+<http://www.group15_KD_tr_onto/2022-01-24> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-01-25
+<http://www.group15_KD_tr_onto/2022-01-25> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-01-26
+<http://www.group15_KD_tr_onto/2022-01-26> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-01-27
+<http://www.group15_KD_tr_onto/2022-01-27> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-01-28
+<http://www.group15_KD_tr_onto/2022-01-28> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-01-29
+<http://www.group15_KD_tr_onto/2022-01-29> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-01-30
+<http://www.group15_KD_tr_onto/2022-01-30> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-01-31
+<http://www.group15_KD_tr_onto/2022-01-31> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-02-01
+<http://www.group15_KD_tr_onto/2022-02-01> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-02-02
+<http://www.group15_KD_tr_onto/2022-02-02> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-02-03
+<http://www.group15_KD_tr_onto/2022-02-03> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-02-04
+<http://www.group15_KD_tr_onto/2022-02-04> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-02-05
+<http://www.group15_KD_tr_onto/2022-02-05> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-02-06
+<http://www.group15_KD_tr_onto/2022-02-06> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-02-07
+<http://www.group15_KD_tr_onto/2022-02-07> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-02-08
+<http://www.group15_KD_tr_onto/2022-02-08> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-02-09
+<http://www.group15_KD_tr_onto/2022-02-09> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-02-10
+<http://www.group15_KD_tr_onto/2022-02-10> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-02-11
+<http://www.group15_KD_tr_onto/2022-02-11> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-02-12
+<http://www.group15_KD_tr_onto/2022-02-12> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-02-13
+<http://www.group15_KD_tr_onto/2022-02-13> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-02-14
+<http://www.group15_KD_tr_onto/2022-02-14> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-02-15
+<http://www.group15_KD_tr_onto/2022-02-15> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-02-16
+<http://www.group15_KD_tr_onto/2022-02-16> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-02-17
+<http://www.group15_KD_tr_onto/2022-02-17> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-02-18
+<http://www.group15_KD_tr_onto/2022-02-18> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-02-19
+<http://www.group15_KD_tr_onto/2022-02-19> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-02-20
+<http://www.group15_KD_tr_onto/2022-02-20> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-02-21
+<http://www.group15_KD_tr_onto/2022-02-21> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-02-22
+<http://www.group15_KD_tr_onto/2022-02-22> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-02-23
+<http://www.group15_KD_tr_onto/2022-02-23> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-02-24
+<http://www.group15_KD_tr_onto/2022-02-24> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-02-25
+<http://www.group15_KD_tr_onto/2022-02-25> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-02-26
+<http://www.group15_KD_tr_onto/2022-02-26> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-02-27
+<http://www.group15_KD_tr_onto/2022-02-27> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-02-28
+<http://www.group15_KD_tr_onto/2022-02-28> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-03-01
+<http://www.group15_KD_tr_onto/2022-03-01> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-03-02
+<http://www.group15_KD_tr_onto/2022-03-02> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-03-03
+<http://www.group15_KD_tr_onto/2022-03-03> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-03-04
+<http://www.group15_KD_tr_onto/2022-03-04> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-03-05
+<http://www.group15_KD_tr_onto/2022-03-05> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-03-06
+<http://www.group15_KD_tr_onto/2022-03-06> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-03-07
+<http://www.group15_KD_tr_onto/2022-03-07> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-03-08
+<http://www.group15_KD_tr_onto/2022-03-08> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-03-09
+<http://www.group15_KD_tr_onto/2022-03-09> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-03-10
+<http://www.group15_KD_tr_onto/2022-03-10> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-03-11
+<http://www.group15_KD_tr_onto/2022-03-11> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-03-12
+<http://www.group15_KD_tr_onto/2022-03-12> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-03-13
+<http://www.group15_KD_tr_onto/2022-03-13> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-03-14
+<http://www.group15_KD_tr_onto/2022-03-14> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-03-15
+<http://www.group15_KD_tr_onto/2022-03-15> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-03-16
+<http://www.group15_KD_tr_onto/2022-03-16> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-03-17
+<http://www.group15_KD_tr_onto/2022-03-17> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-03-18
+<http://www.group15_KD_tr_onto/2022-03-18> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-03-19
+<http://www.group15_KD_tr_onto/2022-03-19> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-03-20
+<http://www.group15_KD_tr_onto/2022-03-20> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-03-21
+<http://www.group15_KD_tr_onto/2022-03-21> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-03-22
+<http://www.group15_KD_tr_onto/2022-03-22> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-03-23
+<http://www.group15_KD_tr_onto/2022-03-23> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-03-24
+<http://www.group15_KD_tr_onto/2022-03-24> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-03-25
+<http://www.group15_KD_tr_onto/2022-03-25> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-03-26
+<http://www.group15_KD_tr_onto/2022-03-26> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-03-27
+<http://www.group15_KD_tr_onto/2022-03-27> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-03-28
+<http://www.group15_KD_tr_onto/2022-03-28> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-03-29
+<http://www.group15_KD_tr_onto/2022-03-29> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-03-30
+<http://www.group15_KD_tr_onto/2022-03-30> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-03-31
+<http://www.group15_KD_tr_onto/2022-03-31> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-04-01
+<http://www.group15_KD_tr_onto/2022-04-01> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-04-02
+<http://www.group15_KD_tr_onto/2022-04-02> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-04-03
+<http://www.group15_KD_tr_onto/2022-04-03> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-04-04
+<http://www.group15_KD_tr_onto/2022-04-04> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-04-05
+<http://www.group15_KD_tr_onto/2022-04-05> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-04-06
+<http://www.group15_KD_tr_onto/2022-04-06> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-04-07
+<http://www.group15_KD_tr_onto/2022-04-07> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-04-08
+<http://www.group15_KD_tr_onto/2022-04-08> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-04-09
+<http://www.group15_KD_tr_onto/2022-04-09> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-04-10
+<http://www.group15_KD_tr_onto/2022-04-10> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-04-11
+<http://www.group15_KD_tr_onto/2022-04-11> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-04-12
+<http://www.group15_KD_tr_onto/2022-04-12> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-04-13
+<http://www.group15_KD_tr_onto/2022-04-13> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-04-14
+<http://www.group15_KD_tr_onto/2022-04-14> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-04-15
+<http://www.group15_KD_tr_onto/2022-04-15> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-04-16
+<http://www.group15_KD_tr_onto/2022-04-16> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-04-17
+<http://www.group15_KD_tr_onto/2022-04-17> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-04-18
+<http://www.group15_KD_tr_onto/2022-04-18> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-04-19
+<http://www.group15_KD_tr_onto/2022-04-19> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-04-20
+<http://www.group15_KD_tr_onto/2022-04-20> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-04-21
+<http://www.group15_KD_tr_onto/2022-04-21> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-04-22
+<http://www.group15_KD_tr_onto/2022-04-22> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-04-23
+<http://www.group15_KD_tr_onto/2022-04-23> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-04-24
+<http://www.group15_KD_tr_onto/2022-04-24> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-04-25
+<http://www.group15_KD_tr_onto/2022-04-25> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-04-26
+<http://www.group15_KD_tr_onto/2022-04-26> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-04-27
+<http://www.group15_KD_tr_onto/2022-04-27> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-04-28
+<http://www.group15_KD_tr_onto/2022-04-28> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-04-29
+<http://www.group15_KD_tr_onto/2022-04-29> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-04-30
+<http://www.group15_KD_tr_onto/2022-04-30> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-05-01
+<http://www.group15_KD_tr_onto/2022-05-01> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-05-02
+<http://www.group15_KD_tr_onto/2022-05-02> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-05-03
+<http://www.group15_KD_tr_onto/2022-05-03> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-05-04
+<http://www.group15_KD_tr_onto/2022-05-04> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-05-05
+<http://www.group15_KD_tr_onto/2022-05-05> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-05-06
+<http://www.group15_KD_tr_onto/2022-05-06> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-05-07
+<http://www.group15_KD_tr_onto/2022-05-07> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-05-08
+<http://www.group15_KD_tr_onto/2022-05-08> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-05-09
+<http://www.group15_KD_tr_onto/2022-05-09> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-05-10
+<http://www.group15_KD_tr_onto/2022-05-10> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-05-11
+<http://www.group15_KD_tr_onto/2022-05-11> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-05-12
+<http://www.group15_KD_tr_onto/2022-05-12> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-05-13
+<http://www.group15_KD_tr_onto/2022-05-13> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-05-14
+<http://www.group15_KD_tr_onto/2022-05-14> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-05-15
+<http://www.group15_KD_tr_onto/2022-05-15> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-05-16
+<http://www.group15_KD_tr_onto/2022-05-16> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-05-17
+<http://www.group15_KD_tr_onto/2022-05-17> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-05-18
+<http://www.group15_KD_tr_onto/2022-05-18> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-05-19
+<http://www.group15_KD_tr_onto/2022-05-19> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-05-20
+<http://www.group15_KD_tr_onto/2022-05-20> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-05-21
+<http://www.group15_KD_tr_onto/2022-05-21> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-05-22
+<http://www.group15_KD_tr_onto/2022-05-22> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-05-23
+<http://www.group15_KD_tr_onto/2022-05-23> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-05-24
+<http://www.group15_KD_tr_onto/2022-05-24> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-05-25
+<http://www.group15_KD_tr_onto/2022-05-25> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-05-26
+<http://www.group15_KD_tr_onto/2022-05-26> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-05-27
+<http://www.group15_KD_tr_onto/2022-05-27> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-05-28
+<http://www.group15_KD_tr_onto/2022-05-28> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-05-29
+<http://www.group15_KD_tr_onto/2022-05-29> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-05-30
+<http://www.group15_KD_tr_onto/2022-05-30> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-05-31
+<http://www.group15_KD_tr_onto/2022-05-31> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-06-01
+<http://www.group15_KD_tr_onto/2022-06-01> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-06-02
+<http://www.group15_KD_tr_onto/2022-06-02> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-06-03
+<http://www.group15_KD_tr_onto/2022-06-03> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-06-04
+<http://www.group15_KD_tr_onto/2022-06-04> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-06-05
+<http://www.group15_KD_tr_onto/2022-06-05> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-06-06
+<http://www.group15_KD_tr_onto/2022-06-06> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-06-07
+<http://www.group15_KD_tr_onto/2022-06-07> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-06-08
+<http://www.group15_KD_tr_onto/2022-06-08> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-06-09
+<http://www.group15_KD_tr_onto/2022-06-09> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-06-10
+<http://www.group15_KD_tr_onto/2022-06-10> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-06-11
+<http://www.group15_KD_tr_onto/2022-06-11> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-06-12
+<http://www.group15_KD_tr_onto/2022-06-12> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-06-13
+<http://www.group15_KD_tr_onto/2022-06-13> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-06-14
+<http://www.group15_KD_tr_onto/2022-06-14> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-06-15
+<http://www.group15_KD_tr_onto/2022-06-15> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-06-16
+<http://www.group15_KD_tr_onto/2022-06-16> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-06-17
+<http://www.group15_KD_tr_onto/2022-06-17> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-06-18
+<http://www.group15_KD_tr_onto/2022-06-18> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-06-19
+<http://www.group15_KD_tr_onto/2022-06-19> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-06-20
+<http://www.group15_KD_tr_onto/2022-06-20> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-06-21
+<http://www.group15_KD_tr_onto/2022-06-21> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-06-22
+<http://www.group15_KD_tr_onto/2022-06-22> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-06-23
+<http://www.group15_KD_tr_onto/2022-06-23> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-06-24
+<http://www.group15_KD_tr_onto/2022-06-24> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-06-25
+<http://www.group15_KD_tr_onto/2022-06-25> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-06-26
+<http://www.group15_KD_tr_onto/2022-06-26> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-06-27
+<http://www.group15_KD_tr_onto/2022-06-27> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-06-28
+<http://www.group15_KD_tr_onto/2022-06-28> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-06-29
+<http://www.group15_KD_tr_onto/2022-06-29> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-06-30
+<http://www.group15_KD_tr_onto/2022-06-30> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-07-01
+<http://www.group15_KD_tr_onto/2022-07-01> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-07-02
+<http://www.group15_KD_tr_onto/2022-07-02> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-07-03
+<http://www.group15_KD_tr_onto/2022-07-03> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-07-04
+<http://www.group15_KD_tr_onto/2022-07-04> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-07-05
+<http://www.group15_KD_tr_onto/2022-07-05> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-07-06
+<http://www.group15_KD_tr_onto/2022-07-06> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-07-07
+<http://www.group15_KD_tr_onto/2022-07-07> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-07-08
+<http://www.group15_KD_tr_onto/2022-07-08> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-07-09
+<http://www.group15_KD_tr_onto/2022-07-09> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-07-10
+<http://www.group15_KD_tr_onto/2022-07-10> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-07-11
+<http://www.group15_KD_tr_onto/2022-07-11> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-07-12
+<http://www.group15_KD_tr_onto/2022-07-12> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-07-13
+<http://www.group15_KD_tr_onto/2022-07-13> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-07-14
+<http://www.group15_KD_tr_onto/2022-07-14> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-07-15
+<http://www.group15_KD_tr_onto/2022-07-15> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-07-16
+<http://www.group15_KD_tr_onto/2022-07-16> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-07-17
+<http://www.group15_KD_tr_onto/2022-07-17> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-07-18
+<http://www.group15_KD_tr_onto/2022-07-18> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-07-19
+<http://www.group15_KD_tr_onto/2022-07-19> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-07-20
+<http://www.group15_KD_tr_onto/2022-07-20> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-07-21
+<http://www.group15_KD_tr_onto/2022-07-21> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-07-22
+<http://www.group15_KD_tr_onto/2022-07-22> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-07-23
+<http://www.group15_KD_tr_onto/2022-07-23> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-07-24
+<http://www.group15_KD_tr_onto/2022-07-24> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-07-25
+<http://www.group15_KD_tr_onto/2022-07-25> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-07-26
+<http://www.group15_KD_tr_onto/2022-07-26> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-07-27
+<http://www.group15_KD_tr_onto/2022-07-27> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-07-28
+<http://www.group15_KD_tr_onto/2022-07-28> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-07-29
+<http://www.group15_KD_tr_onto/2022-07-29> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-07-30
+<http://www.group15_KD_tr_onto/2022-07-30> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-07-31
+<http://www.group15_KD_tr_onto/2022-07-31> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-08-01
+<http://www.group15_KD_tr_onto/2022-08-01> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-08-02
+<http://www.group15_KD_tr_onto/2022-08-02> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-08-03
+<http://www.group15_KD_tr_onto/2022-08-03> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-08-04
+<http://www.group15_KD_tr_onto/2022-08-04> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-08-05
+<http://www.group15_KD_tr_onto/2022-08-05> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-08-06
+<http://www.group15_KD_tr_onto/2022-08-06> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-08-07
+<http://www.group15_KD_tr_onto/2022-08-07> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-08-08
+<http://www.group15_KD_tr_onto/2022-08-08> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-08-09
+<http://www.group15_KD_tr_onto/2022-08-09> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-08-10
+<http://www.group15_KD_tr_onto/2022-08-10> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-08-11
+<http://www.group15_KD_tr_onto/2022-08-11> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-08-12
+<http://www.group15_KD_tr_onto/2022-08-12> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-08-13
+<http://www.group15_KD_tr_onto/2022-08-13> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-08-14
+<http://www.group15_KD_tr_onto/2022-08-14> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-08-15
+<http://www.group15_KD_tr_onto/2022-08-15> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-08-16
+<http://www.group15_KD_tr_onto/2022-08-16> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-08-17
+<http://www.group15_KD_tr_onto/2022-08-17> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-08-18
+<http://www.group15_KD_tr_onto/2022-08-18> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-08-19
+<http://www.group15_KD_tr_onto/2022-08-19> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-08-20
+<http://www.group15_KD_tr_onto/2022-08-20> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-08-21
+<http://www.group15_KD_tr_onto/2022-08-21> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-08-22
+<http://www.group15_KD_tr_onto/2022-08-22> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-08-23
+<http://www.group15_KD_tr_onto/2022-08-23> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-08-24
+<http://www.group15_KD_tr_onto/2022-08-24> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-08-25
+<http://www.group15_KD_tr_onto/2022-08-25> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-08-26
+<http://www.group15_KD_tr_onto/2022-08-26> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-08-27
+<http://www.group15_KD_tr_onto/2022-08-27> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-08-28
+<http://www.group15_KD_tr_onto/2022-08-28> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-08-29
+<http://www.group15_KD_tr_onto/2022-08-29> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-08-30
+<http://www.group15_KD_tr_onto/2022-08-30> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-08-31
+<http://www.group15_KD_tr_onto/2022-08-31> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-09-01
+<http://www.group15_KD_tr_onto/2022-09-01> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-09-02
+<http://www.group15_KD_tr_onto/2022-09-02> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-09-03
+<http://www.group15_KD_tr_onto/2022-09-03> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-09-04
+<http://www.group15_KD_tr_onto/2022-09-04> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-09-05
+<http://www.group15_KD_tr_onto/2022-09-05> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-09-06
+<http://www.group15_KD_tr_onto/2022-09-06> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-09-07
+<http://www.group15_KD_tr_onto/2022-09-07> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-09-08
+<http://www.group15_KD_tr_onto/2022-09-08> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-09-09
+<http://www.group15_KD_tr_onto/2022-09-09> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-09-10
+<http://www.group15_KD_tr_onto/2022-09-10> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-09-11
+<http://www.group15_KD_tr_onto/2022-09-11> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-09-12
+<http://www.group15_KD_tr_onto/2022-09-12> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-09-13
+<http://www.group15_KD_tr_onto/2022-09-13> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-09-14
+<http://www.group15_KD_tr_onto/2022-09-14> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-09-15
+<http://www.group15_KD_tr_onto/2022-09-15> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-09-16
+<http://www.group15_KD_tr_onto/2022-09-16> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-09-17
+<http://www.group15_KD_tr_onto/2022-09-17> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-09-18
+<http://www.group15_KD_tr_onto/2022-09-18> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-09-19
+<http://www.group15_KD_tr_onto/2022-09-19> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-09-20
+<http://www.group15_KD_tr_onto/2022-09-20> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-09-21
+<http://www.group15_KD_tr_onto/2022-09-21> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-09-22
+<http://www.group15_KD_tr_onto/2022-09-22> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-09-23
+<http://www.group15_KD_tr_onto/2022-09-23> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-09-24
+<http://www.group15_KD_tr_onto/2022-09-24> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-09-25
+<http://www.group15_KD_tr_onto/2022-09-25> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-09-26
+<http://www.group15_KD_tr_onto/2022-09-26> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-09-27
+<http://www.group15_KD_tr_onto/2022-09-27> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-09-28
+<http://www.group15_KD_tr_onto/2022-09-28> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-09-29
+<http://www.group15_KD_tr_onto/2022-09-29> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-09-30
+<http://www.group15_KD_tr_onto/2022-09-30> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-10-01
+<http://www.group15_KD_tr_onto/2022-10-01> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-10-02
+<http://www.group15_KD_tr_onto/2022-10-02> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-10-03
+<http://www.group15_KD_tr_onto/2022-10-03> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-10-04
+<http://www.group15_KD_tr_onto/2022-10-04> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-10-05
+<http://www.group15_KD_tr_onto/2022-10-05> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-10-06
+<http://www.group15_KD_tr_onto/2022-10-06> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-10-07
+<http://www.group15_KD_tr_onto/2022-10-07> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-10-08
+<http://www.group15_KD_tr_onto/2022-10-08> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-10-09
+<http://www.group15_KD_tr_onto/2022-10-09> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-10-10
+<http://www.group15_KD_tr_onto/2022-10-10> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-10-11
+<http://www.group15_KD_tr_onto/2022-10-11> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-10-12
+<http://www.group15_KD_tr_onto/2022-10-12> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-10-13
+<http://www.group15_KD_tr_onto/2022-10-13> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-10-14
+<http://www.group15_KD_tr_onto/2022-10-14> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-10-15
+<http://www.group15_KD_tr_onto/2022-10-15> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-10-16
+<http://www.group15_KD_tr_onto/2022-10-16> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-10-17
+<http://www.group15_KD_tr_onto/2022-10-17> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-10-18
+<http://www.group15_KD_tr_onto/2022-10-18> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-10-19
+<http://www.group15_KD_tr_onto/2022-10-19> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-10-20
+<http://www.group15_KD_tr_onto/2022-10-20> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-10-21
+<http://www.group15_KD_tr_onto/2022-10-21> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-10-22
+<http://www.group15_KD_tr_onto/2022-10-22> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-10-23
+<http://www.group15_KD_tr_onto/2022-10-23> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-10-24
+<http://www.group15_KD_tr_onto/2022-10-24> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-10-25
+<http://www.group15_KD_tr_onto/2022-10-25> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-10-26
+<http://www.group15_KD_tr_onto/2022-10-26> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-10-27
+<http://www.group15_KD_tr_onto/2022-10-27> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-10-28
+<http://www.group15_KD_tr_onto/2022-10-28> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-10-29
+<http://www.group15_KD_tr_onto/2022-10-29> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-10-30
+<http://www.group15_KD_tr_onto/2022-10-30> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-10-31
+<http://www.group15_KD_tr_onto/2022-10-31> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-11-01
+<http://www.group15_KD_tr_onto/2022-11-01> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-11-02
+<http://www.group15_KD_tr_onto/2022-11-02> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-11-03
+<http://www.group15_KD_tr_onto/2022-11-03> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-11-04
+<http://www.group15_KD_tr_onto/2022-11-04> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-11-05
+<http://www.group15_KD_tr_onto/2022-11-05> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-11-06
+<http://www.group15_KD_tr_onto/2022-11-06> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-11-07
+<http://www.group15_KD_tr_onto/2022-11-07> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-11-08
+<http://www.group15_KD_tr_onto/2022-11-08> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-11-09
+<http://www.group15_KD_tr_onto/2022-11-09> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-11-10
+<http://www.group15_KD_tr_onto/2022-11-10> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-11-11
+<http://www.group15_KD_tr_onto/2022-11-11> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-11-12
+<http://www.group15_KD_tr_onto/2022-11-12> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-11-13
+<http://www.group15_KD_tr_onto/2022-11-13> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-11-14
+<http://www.group15_KD_tr_onto/2022-11-14> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-11-15
+<http://www.group15_KD_tr_onto/2022-11-15> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-11-16
+<http://www.group15_KD_tr_onto/2022-11-16> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-11-17
+<http://www.group15_KD_tr_onto/2022-11-17> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-11-18
+<http://www.group15_KD_tr_onto/2022-11-18> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-11-19
+<http://www.group15_KD_tr_onto/2022-11-19> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-11-20
+<http://www.group15_KD_tr_onto/2022-11-20> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-11-21
+<http://www.group15_KD_tr_onto/2022-11-21> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-11-22
+<http://www.group15_KD_tr_onto/2022-11-22> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-11-23
+<http://www.group15_KD_tr_onto/2022-11-23> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-11-24
+<http://www.group15_KD_tr_onto/2022-11-24> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-11-25
+<http://www.group15_KD_tr_onto/2022-11-25> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-11-26
+<http://www.group15_KD_tr_onto/2022-11-26> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-11-27
+<http://www.group15_KD_tr_onto/2022-11-27> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-11-28
+<http://www.group15_KD_tr_onto/2022-11-28> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-11-29
+<http://www.group15_KD_tr_onto/2022-11-29> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-11-30
+<http://www.group15_KD_tr_onto/2022-11-30> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-12-01
+<http://www.group15_KD_tr_onto/2022-12-01> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-12-02
+<http://www.group15_KD_tr_onto/2022-12-02> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-12-03
+<http://www.group15_KD_tr_onto/2022-12-03> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-12-04
+<http://www.group15_KD_tr_onto/2022-12-04> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-12-05
+<http://www.group15_KD_tr_onto/2022-12-05> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-12-06
+<http://www.group15_KD_tr_onto/2022-12-06> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-12-07
+<http://www.group15_KD_tr_onto/2022-12-07> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-12-08
+<http://www.group15_KD_tr_onto/2022-12-08> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-12-09
+<http://www.group15_KD_tr_onto/2022-12-09> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-12-10
+<http://www.group15_KD_tr_onto/2022-12-10> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-12-11
+<http://www.group15_KD_tr_onto/2022-12-11> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-12-12
+<http://www.group15_KD_tr_onto/2022-12-12> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-12-13
+<http://www.group15_KD_tr_onto/2022-12-13> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-12-14
+<http://www.group15_KD_tr_onto/2022-12-14> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-12-15
+<http://www.group15_KD_tr_onto/2022-12-15> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-12-16
+<http://www.group15_KD_tr_onto/2022-12-16> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-12-17
+<http://www.group15_KD_tr_onto/2022-12-17> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-12-18
+<http://www.group15_KD_tr_onto/2022-12-18> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-12-19
+<http://www.group15_KD_tr_onto/2022-12-19> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-12-20
+<http://www.group15_KD_tr_onto/2022-12-20> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-12-21
+<http://www.group15_KD_tr_onto/2022-12-21> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-12-22
+<http://www.group15_KD_tr_onto/2022-12-22> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-12-23
+<http://www.group15_KD_tr_onto/2022-12-23> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-12-24
+<http://www.group15_KD_tr_onto/2022-12-24> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-12-25
+<http://www.group15_KD_tr_onto/2022-12-25> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-12-26
+<http://www.group15_KD_tr_onto/2022-12-26> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-12-27
+<http://www.group15_KD_tr_onto/2022-12-27> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-12-28
+<http://www.group15_KD_tr_onto/2022-12-28> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-12-29
+<http://www.group15_KD_tr_onto/2022-12-29> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-12-30
+<http://www.group15_KD_tr_onto/2022-12-30> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/2022-12-31
+<http://www.group15_KD_tr_onto/2022-12-31> rdf:type owl:NamedIndividual ,
+                                                    tr:Date .
+
+
+###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi
