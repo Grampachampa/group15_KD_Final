@@ -179,7 +179,7 @@ g = Graph()
 # coordinates[ws_id:[ws_lat,ws_long]]; 
 # id_coord_dict[ts_id: (ts_name, [ts_lat, ts_long])]
 
-train_ontology = os.path.join(current_dir, "tr-test.ttl")
+train_ontology = os.path.join(current_dir, "tr - Copy.ttl")
 load_graph(g, train_ontology)
 for ts_id, ts_contents in id_coord_dict.items():
     ts_name, ts_coords = ts_contents
@@ -218,23 +218,41 @@ for ws_id, ws_coords in coordinates.items():
 
 # Fun time: now we get all the weather and connect it to the date!!!
 
-# weather_by_date = os.path.join(os.path.join(os.path.dirname(current_dir), "weather_data"), 'nl_weather_data.csv')
+weather_by_date = os.path.join(os.path.join(os.path.dirname(current_dir), "weather_data"), 'nl_weather_data.csv')
 
-# with open(weather_by_date) as weather_dates:
-#     daily_w_dict = csv.DictReader(weather_dates)
+with open(weather_by_date) as weather_dates:
+    daily_w_dict = csv.DictReader(weather_dates)
 
-#     for row in daily_w_dict:
-#         wind_direction = row["DDVEC"]
-#         max_windspeed = row["FHX"]
-#         mean_temp = row["TG"]
-#         percipitation = row["RH"]
-#         visibility = row["VVN"]
-#         ws_id = row["STN"]
-#         date = row["YYYYMMDD"]
+    for row in daily_w_dict:
+        wind_direction = row["DDVEC"] if row["DDVEC"] != "  " else None
+        max_windspeed = row["FHX"] if row["FHX"] != "  " else None
+        mean_temp = row["TG"] if row["TG"] != "  " else None
+        percipitation = row["RH"] if row["RH"] != "  " else None
+        visibility = row["VVN"] if row["VVN"] != "  " else None
+        ws_id = row["STN"].upper()
+        date = row["YYYYMMDD"]
 
-#         g.add((URIRef(train[str(ws_id + "_" +date)]), RDF.type, train["weat"])) 
-#         g.add((URIRef(train[str(ws_id)]), geo.long, Literal(ws_long, datatype=xsd.float)))
-#         g.add((URIRef(train[str(ws_id)]), dbp.code, Literal(ws_id)))
+        individ_name = str(ws_id + "_" + date)
+
+        g.add((URIRef(train[individ_name]), RDF.type, train[f"Weather_Phenomenon"]))
+        g.add((URIRef(train[individ_name]), train["on_ws"], URIRef(train[str(ws_id)])))
+
+        
+        if wind_direction is not None:
+            g.add((URIRef(train[individ_name]), train.has_wind_direction, Literal(int(wind_direction), datatype=xsd.integer))) 
+        
+        if max_windspeed is not None:
+            g.add((URIRef(train[individ_name]), train.has_max_windspeed, Literal(int(max_windspeed), datatype=xsd.integer)))
+        if mean_temp is not None:
+            g.add((URIRef(train[individ_name]), train.has_mean_temp, Literal(int(mean_temp), datatype=xsd.integer)))
+        if percipitation is not None:
+            g.add((URIRef(train[individ_name]), train.has_percipitation, Literal(int(percipitation), datatype=xsd.integer)))
+        if visibility is not None:
+            g.add((URIRef(train[individ_name]), train.has_visibility, Literal(int(visibility), datatype=xsd.integer)))
+
+        g.add((URIRef(train[individ_name]), train.on_date, train[date]))
+
+        
 
     
 
@@ -242,5 +260,5 @@ for ws_id, ws_coords in coordinates.items():
 
 
 # serialize and save
-serialize_graph(g)
+#serialize_graph(g)
 save_graph(g, train_ontology)

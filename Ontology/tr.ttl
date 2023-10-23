@@ -1,5 +1,7 @@
 @prefix : <http://www.group15_KD_tr_onto/> .
 @prefix tr: <http://www.group15_KD_tr_onto/> .
+@prefix dbp: <http://dbpedia.org/property/> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -35,27 +37,71 @@ tr:has_closest_weatherstation rdf:type owl:ObjectProperty ,
                               rdfs:range tr:Weatherstation .
 
 
+###  http://www.group15_KD_tr_onto/on_date
+tr:on_date rdf:type owl:ObjectProperty ;
+           owl:inverseOf tr:was_date_for ;
+           rdfs:range tr:Date .
+
+
+###  http://www.group15_KD_tr_onto/was_date_for
+tr:was_date_for rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.group15_KD_tr_onto/has_max_windspeed
+tr:has_max_windspeed rdf:type owl:DatatypeProperty ;
+                     rdfs:domain tr:Weather_Phenomenon ;
+                     rdfs:range xsd:int .
+
+
+###  http://www.group15_KD_tr_onto/has_mean_temp
+tr:has_mean_temp rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf owl:topDataProperty ;
+                 rdfs:domain tr:Weather_Phenomenon ;
+                 rdfs:range xsd:int .
+
+
+###  http://www.group15_KD_tr_onto/has_percipitation
+tr:has_percipitation rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf owl:topDataProperty ;
+                     rdfs:domain tr:Weather_Phenomenon ;
+                     rdfs:range xsd:int .
+
+
+###  http://www.group15_KD_tr_onto/has_visibility
+tr:has_visibility rdf:type owl:DatatypeProperty ;
+                  rdfs:domain tr:Weather_Phenomenon ;
+                  rdfs:range xsd:int .
+
+
+###  http://www.group15_KD_tr_onto/has_wind_direction
+tr:has_wind_direction rdf:type owl:DatatypeProperty ;
+                      rdfs:domain tr:Weather_Phenomenon ;
+                      rdfs:range xsd:int .
+
+
 #################################################################
 #    Classes
 #################################################################
-
-###  http://www.group15_KD_tr_onto/Air_Pressure
-tr:Air_Pressure rdf:type owl:Class ;
-                rdfs:subClassOf tr:Weather_Phenomenon .
-
 
 ###  http://www.group15_KD_tr_onto/Date
 tr:Date rdf:type owl:Class .
 
 
-###  http://www.group15_KD_tr_onto/Precipitation
-tr:Precipitation rdf:type owl:Class ;
-                 rdfs:subClassOf tr:Weather_Phenomenon .
-
-
-###  http://www.group15_KD_tr_onto/Temperature
-tr:Temperature rdf:type owl:Class ;
-               rdfs:subClassOf tr:Weather_Phenomenon .
+###  http://www.group15_KD_tr_onto/Not_Useful_Weather_Phenomenon
+tr:Not_Useful_Weather_Phenomenon rdf:type owl:Class ;
+                                 owl:equivalentClass [ owl:intersectionOf ( tr:Weather_Phenomenon
+                                                                            [ rdf:type owl:Class ;
+                                                                              owl:complementOf tr:Useful_Weather_Phenomenon
+                                                                            ]
+                                                                          ) ;
+                                                       rdf:type owl:Class
+                                                     ] ;
+                                 rdfs:subClassOf tr:Weather_Phenomenon ;
+                                 owl:disjointWith tr:Useful_Weather_Phenomenon .
 
 
 ###  http://www.group15_KD_tr_onto/Train_Company
@@ -74,9 +120,38 @@ tr:Train_Station rdf:type owl:Class .
 tr:Trip rdf:type owl:Class .
 
 
-###  http://www.group15_KD_tr_onto/Visibility
-tr:Visibility rdf:type owl:Class ;
-              rdfs:subClassOf tr:Weather_Phenomenon .
+###  http://www.group15_KD_tr_onto/Useful_Weather_Phenomenon
+tr:Useful_Weather_Phenomenon rdf:type owl:Class ;
+                             owl:equivalentClass [ owl:intersectionOf ( tr:Weather_Phenomenon
+                                                                        [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty tr:has_max_windspeed ;
+                                                                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                          owl:onDataRange xsd:int
+                                                                        ]
+                                                                        [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty tr:has_mean_temp ;
+                                                                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                          owl:onDataRange xsd:int
+                                                                        ]
+                                                                        [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty tr:has_percipitation ;
+                                                                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                          owl:onDataRange xsd:int
+                                                                        ]
+                                                                        [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty tr:has_visibility ;
+                                                                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                          owl:onDataRange xsd:int
+                                                                        ]
+                                                                        [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty tr:has_wind_direction ;
+                                                                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                          owl:onDataRange xsd:int
+                                                                        ]
+                                                                      ) ;
+                                                   rdf:type owl:Class
+                                                 ] ;
+                             rdfs:subClassOf tr:Weather_Phenomenon .
 
 
 ###  http://www.group15_KD_tr_onto/Weather_Phenomenon
@@ -85,11 +160,6 @@ tr:Weather_Phenomenon rdf:type owl:Class .
 
 ###  http://www.group15_KD_tr_onto/Weatherstation
 tr:Weatherstation rdf:type owl:Class .
-
-
-###  http://www.group15_KD_tr_onto/Wind
-tr:Wind rdf:type owl:Class ;
-        rdfs:subClassOf tr:Weather_Phenomenon .
 
 
 #################################################################
