@@ -1,7 +1,7 @@
 import csv, json, os
 from rdflib import Graph, Literal, BNode, Namespace, RDF, URIRef, RDFS, XSD, OWL, FOAF
 
-input_csv_file = '/Users/bedirhangursoy/group15_KD_Final/train_data/temp_train_data.csv'
+input_csv_file = '/Users/bedirhangursoy/group15_KD_Final/train_data/clean_train_data.csv'
 
 
 with open(input_csv_file, mode='r') as file:
@@ -79,7 +79,7 @@ for date, station_data in data_dict.items():
         g.add((tr[f"Station_Data_{station_code}"], RDFS.subClassOf, tr['Station_Data']))
 
 # Serialize the graph to a Turtle file
-output_file = "output.ttl"
+output_file = "final_output.ttl"
 g.serialize(destination=output_file, format="turtle")
 
 print(f"Data has been saved to {output_file}")
