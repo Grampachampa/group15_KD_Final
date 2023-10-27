@@ -50,7 +50,7 @@ def load_graph(graph_name, filename):
 g = Graph()
 current_dir = os. getcwd()
 print('opening graph')
-train_ontology = os.path.join(current_dir, 'tr_ontology.ttl')
+train_ontology = os.path.join(current_dir, 'tr - Copy.ttl')
 load_graph(g, train_ontology)
 tr = Namespace("http://www.group15_KD_tr_onto/")
 g.bind("tr", tr)
@@ -70,11 +70,13 @@ for date, station_data in data_dict.items():
         station_code_URI = URIRef(tr[station_code])
         g.add((station_uri, RDF.type, tr[f"Station_Data_{station_code}"]))
         g.add((station_code_URI, RDF.type, tr['Train_Station']))
-        g.add((station_uri, tr["on_date"], Literal(date_uri)))
+        g.add((station_uri, tr["on_date"], date_uri))
+        g.add((date_uri, tr["was_date_for"], station_uri))
         g.add((station_uri, FOAF.name, Literal(station_name)))
         g.add((station_uri, tr["hasAverageDelay"], Literal(avg_delay, datatype=XSD.float)))
-        g.add((station_uri, dbp["hasCode"], Literal(station_code_URI)))
-        g.add((tr[f"StationData_{station_code}"], RDFS.subClassOf, tr['Station_Data']))
+        g.add((station_uri, dbp["code"], Literal(station_code)))
+        g.add((station_uri, tr['parent_station'], tr[station_code]))
+        g.add((tr[f"Station_Data_{station_code}"], RDFS.subClassOf, tr['Station_Data']))
 
 # Serialize the graph to a Turtle file
 output_file = "output.ttl"
