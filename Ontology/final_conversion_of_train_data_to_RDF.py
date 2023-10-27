@@ -46,7 +46,7 @@ for date in data_dict:
 g = Graph()
 print('create that graph')
 # Define namespaces
-tr = Namespace("http://example.org/")
+tr = Namespace("http://www.group15_KD_tr_onto/")
 g.bind("tr", tr)
 
 print('creating RDF file')
