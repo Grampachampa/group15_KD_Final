@@ -191,7 +191,7 @@ for ts_id, ts_contents in id_coord_dict.items():
     # add coords
     g.add((URIRef(train[str(ts_id)]), geo.lat, Literal(ts_lat, datatype=xsd.float))) 
     g.add((URIRef(train[str(ts_id)]), geo.long, Literal(ts_long, datatype=xsd.float))) 
-    g.add((URIRef(train[str(ts_id)]), owl.sameAs, URIRef(ts_sameAs[ts_id]))) 
+    #g.add((URIRef(train[str(ts_id)]), owl.sameAs, URIRef(ts_sameAs[ts_id]))) 
 
     # add closest weatherstation
     g.add((URIRef(train[str(ts_id)]), train['has_closest_weatherstation'], URIRef(train[str(mindistance[ts_id])])))
@@ -249,6 +249,11 @@ with open(weather_by_date) as weather_dates:
             g.add((URIRef(train[individ_name]), train.has_percipitation, Literal(int(percipitation), datatype=xsd.integer)))
         if visibility is not None:
             g.add((URIRef(train[individ_name]), train.has_visibility, Literal(int(visibility), datatype=xsd.integer)))
+
+        if None in [wind_direction, max_windspeed, mean_temp, percipitation, visibility]:
+            g.add((URIRef(train[individ_name]), train.is_useless, Literal(True, datatype=xsd.boolean)))
+        else:
+            g.add((URIRef(train[individ_name]), train.is_useless, Literal(False, datatype=xsd.boolean)))
 
         g.add((URIRef(train[individ_name]), train.on_date, train[date]))
 

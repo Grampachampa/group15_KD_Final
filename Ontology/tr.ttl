@@ -27,7 +27,9 @@ foaf:has_name rdf:type owl:AnnotationProperty .
 ###  http://www.group15_KD_tr_onto/has_closest_train_station
 tr:has_closest_train_station rdf:type owl:ObjectProperty ;
                              owl:inverseOf tr:has_closest_weatherstation ;
-                             rdf:type owl:InverseFunctionalProperty .
+                             rdf:type owl:InverseFunctionalProperty ;
+                             rdfs:domain tr:Weatherstation ;
+                             rdfs:range tr:Train_Station .
 
 
 ###  http://www.group15_KD_tr_onto/has_closest_weatherstation
@@ -44,7 +46,8 @@ tr:on_date rdf:type owl:ObjectProperty ;
 
 
 ###  http://www.group15_KD_tr_onto/was_date_for
-tr:was_date_for rdf:type owl:ObjectProperty .
+tr:was_date_for rdf:type owl:ObjectProperty ;
+                rdfs:domain tr:Date .
 
 
 #################################################################
@@ -54,33 +57,37 @@ tr:was_date_for rdf:type owl:ObjectProperty .
 ###  http://www.group15_KD_tr_onto/has_max_windspeed
 tr:has_max_windspeed rdf:type owl:DatatypeProperty ;
                      rdfs:domain tr:Weather_Phenomenon ;
-                     rdfs:range xsd:int .
+                     rdfs:range xsd:integer .
 
 
 ###  http://www.group15_KD_tr_onto/has_mean_temp
 tr:has_mean_temp rdf:type owl:DatatypeProperty ;
-                 rdfs:subPropertyOf owl:topDataProperty ;
                  rdfs:domain tr:Weather_Phenomenon ;
-                 rdfs:range xsd:int .
+                 rdfs:range xsd:integer .
 
 
 ###  http://www.group15_KD_tr_onto/has_percipitation
 tr:has_percipitation rdf:type owl:DatatypeProperty ;
-                     rdfs:subPropertyOf owl:topDataProperty ;
                      rdfs:domain tr:Weather_Phenomenon ;
-                     rdfs:range xsd:int .
+                     rdfs:range xsd:integer .
 
 
 ###  http://www.group15_KD_tr_onto/has_visibility
 tr:has_visibility rdf:type owl:DatatypeProperty ;
                   rdfs:domain tr:Weather_Phenomenon ;
-                  rdfs:range xsd:int .
+                  rdfs:range xsd:integer .
 
 
 ###  http://www.group15_KD_tr_onto/has_wind_direction
 tr:has_wind_direction rdf:type owl:DatatypeProperty ;
                       rdfs:domain tr:Weather_Phenomenon ;
-                      rdfs:range xsd:int .
+                      rdfs:range xsd:integer .
+
+
+###  http://www.group15_KD_tr_onto/is_useless
+tr:is_useless rdf:type owl:DatatypeProperty ;
+              rdfs:domain tr:Weather_Phenomenon ;
+              rdfs:range xsd:boolean .
 
 
 #################################################################
@@ -94,8 +101,9 @@ tr:Date rdf:type owl:Class .
 ###  http://www.group15_KD_tr_onto/Not_Useful_Weather_Phenomenon
 tr:Not_Useful_Weather_Phenomenon rdf:type owl:Class ;
                                  owl:equivalentClass [ owl:intersectionOf ( tr:Weather_Phenomenon
-                                                                            [ rdf:type owl:Class ;
-                                                                              owl:complementOf tr:Useful_Weather_Phenomenon
+                                                                            [ rdf:type owl:Restriction ;
+                                                                              owl:onProperty tr:is_useless ;
+                                                                              owl:hasValue "true"^^xsd:boolean
                                                                             ]
                                                                           ) ;
                                                        rdf:type owl:Class
@@ -124,29 +132,8 @@ tr:Trip rdf:type owl:Class .
 tr:Useful_Weather_Phenomenon rdf:type owl:Class ;
                              owl:equivalentClass [ owl:intersectionOf ( tr:Weather_Phenomenon
                                                                         [ rdf:type owl:Restriction ;
-                                                                          owl:onProperty tr:has_max_windspeed ;
-                                                                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                          owl:onDataRange xsd:int
-                                                                        ]
-                                                                        [ rdf:type owl:Restriction ;
-                                                                          owl:onProperty tr:has_mean_temp ;
-                                                                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                          owl:onDataRange xsd:int
-                                                                        ]
-                                                                        [ rdf:type owl:Restriction ;
-                                                                          owl:onProperty tr:has_percipitation ;
-                                                                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                          owl:onDataRange xsd:int
-                                                                        ]
-                                                                        [ rdf:type owl:Restriction ;
-                                                                          owl:onProperty tr:has_visibility ;
-                                                                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                          owl:onDataRange xsd:int
-                                                                        ]
-                                                                        [ rdf:type owl:Restriction ;
-                                                                          owl:onProperty tr:has_wind_direction ;
-                                                                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                          owl:onDataRange xsd:int
+                                                                          owl:onProperty tr:is_useless ;
+                                                                          owl:hasValue "false"^^xsd:boolean
                                                                         ]
                                                                       ) ;
                                                    rdf:type owl:Class
