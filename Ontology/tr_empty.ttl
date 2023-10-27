@@ -51,6 +51,10 @@ tr:on_ws rdf:type owl:ObjectProperty ;
          rdfs:range tr:Weatherstation .
 
 
+###  http://www.group15_KD_tr_onto/parent_station
+tr:parent_station rdf:type owl:ObjectProperty .
+
+
 ###  http://www.group15_KD_tr_onto/was_date_for
 tr:was_date_for rdf:type owl:ObjectProperty ;
                 rdfs:domain tr:Date .
@@ -59,6 +63,11 @@ tr:was_date_for rdf:type owl:ObjectProperty ;
 #################################################################
 #    Data properties
 #################################################################
+
+###  http://www.group15_KD_tr_onto/hasAverageDelay
+tr:hasAverageDelay rdf:type owl:DatatypeProperty ;
+                   rdfs:range xsd:float .
+
 
 ###  http://www.group15_KD_tr_onto/has_max_windspeed
 tr:has_max_windspeed rdf:type owl:DatatypeProperty ;
