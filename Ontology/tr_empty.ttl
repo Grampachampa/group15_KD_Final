@@ -45,6 +45,12 @@ tr:on_date rdf:type owl:ObjectProperty ;
            rdfs:range tr:Date .
 
 
+###  http://www.group15_KD_tr_onto/on_ws
+tr:on_ws rdf:type owl:ObjectProperty ;
+         rdfs:domain tr:Weather_Phenomenon ;
+         rdfs:range tr:Weatherstation .
+
+
 ###  http://www.group15_KD_tr_onto/was_date_for
 tr:was_date_for rdf:type owl:ObjectProperty ;
                 rdfs:domain tr:Date .
