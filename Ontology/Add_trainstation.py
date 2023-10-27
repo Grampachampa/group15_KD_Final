@@ -168,7 +168,7 @@ for ts_id, ts_contents in id_coord_dict.items():
     
 
     # add name
-    g.add((URIRef(train[str(ts_id)]), foaf['has_name'], Literal(ts_name)))
+    g.add((URIRef(train[str(ts_id)]), foaf.name, Literal(ts_name)))
     # add code
     g.add((URIRef(train[str(ts_id)]), dbp.code, Literal(ts_id)))
     
@@ -178,7 +178,7 @@ for ws_id, ws_coords in coordinates.items():
 
     # add coords
     g.add((URIRef(train[str(ws_id)]), RDF.type, train['Weatherstation']))
-    g.add((URIRef(train[str(ws_id)]), foaf['has_name'], Literal(stn_to_name[ws_id]))) 
+    g.add((URIRef(train[str(ws_id)]), foaf.name, Literal(stn_to_name[ws_id]))) 
     g.add((URIRef(train[str(ws_id)]), dbp.code, Literal(ws_id)))
     g.add((URIRef(train[str(ws_id)]), geo.lat, Literal(ws_lat, datatype=xsd.float))) 
     g.add((URIRef(train[str(ws_id)]), geo.long, Literal(ws_long, datatype=xsd.float)))
