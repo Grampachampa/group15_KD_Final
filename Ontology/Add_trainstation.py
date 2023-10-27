@@ -113,38 +113,6 @@ with open(weather_data, 'r') as weather:
 
 
 
-mindistance = {}
-for ts_id, ts_contents in id_coord_dict.items():
-    ts_name, ts_coords = ts_contents
-    ts_latitude, ts_longitude = ts_coords
-    min_distance = float("inf")
-    for ws_id, ws_coords in coordinates.items():
-        ws_latitude, ws_longitude = ws_coords
-  
-        R = 6373.0
-
-        lat1 = math.radians(ts_latitude)
-        lon1 = math.radians(ts_longitude)
-        lat2 = math.radians(ws_latitude)
-        lon2 = math.radians(ws_longitude)
-
-        dlon = lon2 - lon1
-        dlat = lat2 - lat1
-
-        a = math.sin(dlat / 2)**2 + math.cos(lat1) * math.cos(lat2) * math.sin(dlon / 2)**2
-        c = 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
-
-        distance = R * c
-        if distance < min_distance:
-            min_distance = distance
-            mindistance[ts_id] = ws_id
-    print(ts_id, mindistance[ts_id], sep=" | ")
-
-
-
-
-
-
 # at this point, we have everything we need to start adding things
 
 owl = Namespace("http://www.w3.org/2002/07/owl#")
@@ -191,10 +159,12 @@ for ts_id, ts_contents in id_coord_dict.items():
     # add coords
     g.add((URIRef(train[str(ts_id)]), geo.lat, Literal(ts_lat, datatype=xsd.float))) 
     g.add((URIRef(train[str(ts_id)]), geo.long, Literal(ts_long, datatype=xsd.float))) 
-    #g.add((URIRef(train[str(ts_id)]), owl.sameAs, URIRef(ts_sameAs[ts_id]))) 
+    g.add((URIRef(train[str(ts_id)]), owl.sameAs, URIRef(ts_sameAs[ts_id]))) 
+    g.add((URIRef(ts_sameAs[ts_id]), RDF.type, train['Train_Station']))
+
 
     # add closest weatherstation
-    g.add((URIRef(train[str(ts_id)]), train['has_closest_weatherstation'], URIRef(train[str(mindistance[ts_id])])))
+    #g.add((URIRef(train[str(ts_id)]), train['has_closest_weatherstation'], URIRef(train[str(mindistance[ts_id])])))
     
 
     # add name
@@ -219,7 +189,8 @@ for ws_id, ws_coords in coordinates.items():
 # Fun time: now we get all the weather and connect it to the date!!!
 
 weather_by_date = os.path.join(os.path.join(os.path.dirname(current_dir), "weather_data"), 'nl_weather_data.csv')
-
+useless_set = set()
+weather_phenomena_usefullness_list = []
 with open(weather_by_date) as weather_dates:
     daily_w_dict = csv.DictReader(weather_dates)
 
@@ -251,19 +222,61 @@ with open(weather_by_date) as weather_dates:
             g.add((URIRef(train[individ_name]), train.has_visibility, Literal(int(visibility), datatype=xsd.integer)))
 
         if None in [wind_direction, max_windspeed, mean_temp, percipitation, visibility]:
-            g.add((URIRef(train[individ_name]), train.is_useless, Literal(True, datatype=xsd.boolean)))
-        else:
-            g.add((URIRef(train[individ_name]), train.is_useless, Literal(False, datatype=xsd.boolean)))
-
+            # g.add((URIRef(train[individ_name]), train.is_useless, Literal(True, datatype=xsd.boolean)))
+            # g.add((URIRef(train[individ_name]), RDF.type, train[f"Not_Useful_Weather_Phenomenon"]))
+            useless_set.add(ws_id)
+        # else:
+        #     g.add((URIRef(train[individ_name]), train.is_useless, Literal(False, datatype=xsd.boolean)))
+        #     g.add((URIRef(train[individ_name]), RDF.type, train[f"Useful_Weather_Phenomenon"]))
         g.add((URIRef(train[individ_name]), train.on_date, train[date]))
+        weather_phenomena_usefullness_list.append((ws_id, individ_name))
 
-        
+for id, instance_name in weather_phenomena_usefullness_list:
+    if id in useless_set:
+        g.add((URIRef(train[instance_name]), train.is_useless, Literal(True, datatype=xsd.boolean)))
+        g.add((URIRef(train[instance_name]), RDF.type, train[f"Not_Useful_Weather_Phenomenon"]))
+    else:
+        g.add((URIRef(train[instance_name]), train.is_useless, Literal(False, datatype=xsd.boolean)))
+        g.add((URIRef(train[instance_name]), RDF.type, train[f"Useful_Weather_Phenomenon"]))
 
+
+
+mindistance = {}
+for ts_id, ts_contents in id_coord_dict.items():
+    ts_name, ts_coords = ts_contents
+    ts_latitude, ts_longitude = ts_coords
+    min_distance = float("inf")
+    for ws_id, ws_coords in coordinates.items():
+        if ws_id in useless_set:
+            continue
+        ws_latitude, ws_longitude = ws_coords
+  
+        R = 6373.0
+
+        lat1 = math.radians(ts_latitude)
+        lon1 = math.radians(ts_longitude)
+        lat2 = math.radians(ws_latitude)
+        lon2 = math.radians(ws_longitude)
+
+        dlon = lon2 - lon1
+        dlat = lat2 - lat1
+
+        a = math.sin(dlat / 2)**2 + math.cos(lat1) * math.cos(lat2) * math.sin(dlon / 2)**2
+        c = 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
+
+        distance = R * c
+        if distance < min_distance:
+            min_distance = distance
+            mindistance[ts_id] = ws_id
+    print(ts_id, mindistance[ts_id], sep=" | ")
+
+for ts_id, ts_contents in id_coord_dict.items():
+    ts_name, ts_coords = ts_contents
+    ts_lat, ts_long = ts_coords
+
+    # add closest weatherstation
+    g.add((URIRef(train[str(ts_id)]), train['has_closest_weatherstation'], URIRef(train[str(mindistance[ts_id])])))
     
 
-
-
-
-# serialize and save
-#serialize_graph(g)
 save_graph(g, train_ontology)
+print (len(coordinates) - len(useless_set), len(coordinates), sep="/")
