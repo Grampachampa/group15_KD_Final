@@ -170,7 +170,7 @@ for ts_id, ts_contents in id_coord_dict.items():
     # add name
     g.add((URIRef(train[str(ts_id)]), foaf.name, Literal(ts_name)))
     # add code
-    g.add((URIRef(train[str(ts_id)]), dbp.code, Literal(ts_id)))
+    g.add((URIRef(train[str(ts_id)]), dbp.code, Literal(ts_id))) 
     
 
 for ws_id, ws_coords in coordinates.items():
@@ -229,6 +229,7 @@ with open(weather_by_date) as weather_dates:
         #     g.add((URIRef(train[individ_name]), train.is_useless, Literal(False, datatype=xsd.boolean)))
         #     g.add((URIRef(train[individ_name]), RDF.type, train[f"Useful_Weather_Phenomenon"]))
         g.add((URIRef(train[individ_name]), train.on_date, train[date]))
+        g.add((train[date], train.was_date_for, URIRef(train[individ_name])))
         weather_phenomena_usefullness_list.append((ws_id, individ_name))
 
 for id, instance_name in weather_phenomena_usefullness_list:
