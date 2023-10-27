@@ -1,7 +1,8 @@
-import csv, json
+import csv, json, os
 from rdflib import Graph, Literal, BNode, Namespace, RDF, URIRef, RDFS, XSD, OWL
 
-input_csv_file = 'temp_train_data.csv'
+input_csv_file = '/Users/bedirhangursoy/group15_KD_Final/train_data/temp_train_data.csv'
+
 
 with open(input_csv_file, mode='r') as file:
     print('opening and reading file...')
@@ -42,10 +43,15 @@ for date in data_dict:
     for entry in data_dict[date]:
         avg_delay = sum(entry[1]) / len(entry[1])
         entry[1] = avg_delay
+def load_graph(graph_name, filename):
+    with open(filename, 'r') as f:
+        graph_name.parse(f, format='turtle')
 
 g = Graph()
-print('create that graph')
-# Define namespaces
+current_dir = os. getcwd()
+print('opening graph')
+train_ontology = os.path.join(current_dir, 'tr_ontology.ttl')
+load_graph(g, train_ontology)
 tr = Namespace("http://www.group15_KD_tr_onto/")
 g.bind("tr", tr)
 
@@ -65,7 +71,7 @@ for date, station_data in data_dict.items():
         g.add((station_uri, tr["hasCode"], station_code_URI))
 
 # Serialize the graph to a Turtle file
-output_file = "output2.ttl"
+output_file = "output.ttl"
 g.serialize(destination=output_file, format="turtle")
 
 print(f"Data has been saved to {output_file}")
