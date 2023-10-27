@@ -1,5 +1,5 @@
 import csv, json, os
-from rdflib import Graph, Literal, BNode, Namespace, RDF, URIRef, RDFS, XSD, OWL
+from rdflib import Graph, Literal, BNode, Namespace, RDF, URIRef, RDFS, XSD, OWL, FOAF
 
 input_csv_file = '/Users/bedirhangursoy/group15_KD_Final/train_data/temp_train_data.csv'
 
@@ -55,7 +55,12 @@ load_graph(g, train_ontology)
 tr = Namespace("http://www.group15_KD_tr_onto/")
 g.bind("tr", tr)
 
+dbp = Namespace('http://dbpedia.org/property/')
+g.bind('dbp', dbp)
+
+
 print('creating RDF file')
+
 for date, station_data in data_dict.items():
     date_uri = URIRef(tr[date])
     for station_name, avg_delay, station_code in station_data:
@@ -63,12 +68,13 @@ for date, station_data in data_dict.items():
         subject = f'{station_code}_{date}'
         station_uri = URIRef(tr[subject])
         station_code_URI = URIRef(tr[station_code])
-        g.add((station_uri, RDF.type, tr[f"StationData_{station_code}"]))
-        g.add((station_code_URI, RDF.type, tr['StationCode']))
-        g.add((station_uri, tr["hasDate"], Literal(date_uri)))
-        g.add((station_uri, tr["hasName"], Literal(station_name)))
+        g.add((station_uri, RDF.type, tr[f"Station_Data_{station_code}"]))
+        g.add((station_code_URI, RDF.type, tr['Train_Station']))
+        g.add((station_uri, tr["on_date"], Literal(date_uri)))
+        g.add((station_uri, FOAF.name, Literal(station_name)))
         g.add((station_uri, tr["hasAverageDelay"], Literal(avg_delay, datatype=XSD.float)))
-        g.add((station_uri, tr["hasCode"], station_code_URI))
+        g.add((station_uri, dbp["hasCode"], Literal(station_code_URI)))
+        g.add((tr[f"StationData_{station_code}"], RDFS.subClassOf, tr['Station_Data']))
 
 # Serialize the graph to a Turtle file
 output_file = "output.ttl"
