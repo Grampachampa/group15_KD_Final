@@ -23,7 +23,7 @@ In order to simulate more than one day, Images have to be saved. We do this via 
 We ask that you house the .ttl ontology file in the same directory as you house the .ipynb file that comes with this document. This allows us to easily find it's location and minimizes issues on your end.
 
 ## Usage
-The only point at which the user has to interact with the code is in the second code cell. Here, they are asked to pick a day
+The only point at which the user has to interact with the code is in the second code cell. Here, you are asked to pick a day:
 
 ```python
 single_day = True
@@ -35,7 +35,9 @@ date = max(0, min(date, 364)) + 1
 
 ymd = datetime.date(year, 1, 1) + datetime.timedelta(date - 1)
 ```
-You are asked to change the number 123 to any number you desire (or not)
+You are asked to replace the number 123 to any number you desire that is between 0 and 364 (or not).
+
+Other than this, you are just asked to run the cells one by one. Some cells (like the last one) might not do anything, based on your settings. This is normal. Some cells may also take a large amount of time to run. We ask that you be patient and give it a minute. The ontology is large, and opening it up with python takes a while.
 
 ## Potential Issues
 Everyone's system is different. This code was largely run on windows machines, so in the event that there are any unexpected issues, please do not hesitate to get in touch with group 15.
