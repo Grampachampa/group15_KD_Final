@@ -1,0 +1,264 @@
+,station,station_name,station_code,ts_lat,ts_long,delay,ws,ws_name,ws_code,ws_lat,ws_long,windspeed,mean_temp,percipitation,visibility,wind_direction
+0,http://www.group15_KD_tr_onto/AMR,Alkmaar railway station,AMR,52.6378,4.74056,0.6858638743455497,http://www.group15_KD_tr_onto/235,De Kooy,235,52.928,4.781,150,80,87,48,255
+1,http://www.group15_KD_tr_onto/ANA,Anna Paulowna railway station,ANA,52.8669,4.81111,0.625,http://www.group15_KD_tr_onto/235,De Kooy,235,52.928,4.781,150,80,87,48,255
+2,http://www.group15_KD_tr_onto/HDRZ,Den Helder Zuid railway station,HDRZ,52.9331,4.76389,0.7875,http://www.group15_KD_tr_onto/235,De Kooy,235,52.928,4.781,150,80,87,48,255
+3,http://www.group15_KD_tr_onto/HDR,Den Helder railway station,HDR,52.9564,4.76083,1.15,http://www.group15_KD_tr_onto/235,De Kooy,235,52.928,4.781,150,80,87,48,255
+4,http://www.group15_KD_tr_onto/HWD,Heerhugowaard railway station,HWD,52.67,4.82361,0.40789473684210525,http://www.group15_KD_tr_onto/235,De Kooy,235,52.928,4.781,150,80,87,48,255
+5,http://www.group15_KD_tr_onto/OBD,Obdam railway station,OBD,52.6781,4.90833,0.5303030303030303,http://www.group15_KD_tr_onto/235,De Kooy,235,52.928,4.781,150,80,87,48,255
+6,http://www.group15_KD_tr_onto/SGN,Schagen railway station,SGN,52.7861,4.80528,0.6097560975609756,http://www.group15_KD_tr_onto/235,De Kooy,235,52.928,4.781,150,80,87,48,255
+7,http://www.group15_KD_tr_onto/AC,Abcoude railway station,AC,52.2744,4.98222,0.8257575757575758,http://www.group15_KD_tr_onto/240,Schiphol,240,52.318,4.79,160,82,130,50,250
+8,http://www.group15_KD_tr_onto/AMPO,Almere Poort railway station,AMPO,52.3428,5.15194,0.35944700460829493,http://www.group15_KD_tr_onto/240,Schiphol,240,52.318,4.79,160,82,130,50,250
+9,http://www.group15_KD_tr_onto/ASA,Amsterdam Amstel station,ASA,52.3464,4.91778,0.6,http://www.group15_KD_tr_onto/240,Schiphol,240,52.318,4.79,160,82,130,50,250
+10,http://www.group15_KD_tr_onto/ASB,Amsterdam Bijlmer ArenA station,ASB,52.3131,4.94611,0.5236363636363637,http://www.group15_KD_tr_onto/240,Schiphol,240,52.318,4.79,160,82,130,50,250
+11,http://www.group15_KD_tr_onto/ASDL,Amsterdam Lelylaan station,ASDL,52.3572,4.83389,0.5172413793103449,http://www.group15_KD_tr_onto/240,Schiphol,240,52.318,4.79,160,82,130,50,250
+12,http://www.group15_KD_tr_onto/ASDM,Amsterdam Muiderpoort railway station,ASDM,52.3608,4.93111,0.6223776223776224,http://www.group15_KD_tr_onto/240,Schiphol,240,52.318,4.79,160,82,130,50,250
+13,http://www.group15_KD_tr_onto/ASDZ,Amsterdam Zuid station,ASDZ,52.3389,4.87306,0.5595744680851064,http://www.group15_KD_tr_onto/240,Schiphol,240,52.318,4.79,160,82,130,50,250
+14,http://www.group15_KD_tr_onto/ASD,Amsterdam Centraal station,ASD,52.3783,4.9,2.08203125,http://www.group15_KD_tr_onto/240,Schiphol,240,52.318,4.79,160,82,130,50,250
+15,http://www.group15_KD_tr_onto/ASSP,Amsterdam Science Park railway station,ASSP,52.3525,4.94861,0.551948051948052,http://www.group15_KD_tr_onto/240,Schiphol,240,52.318,4.79,160,82,130,50,250
+16,http://www.group15_KD_tr_onto/ASS,Amsterdam Sloterdijk station,ASS,52.3892,4.83806,0.6138728323699422,http://www.group15_KD_tr_onto/240,Schiphol,240,52.318,4.79,160,82,130,50,250
+17,http://www.group15_KD_tr_onto/BLL,Bloemendaal railway station,BLL,52.4042,4.6275,1.0128205128205128,http://www.group15_KD_tr_onto/240,Schiphol,240,52.318,4.79,160,82,130,50,250
+18,http://www.group15_KD_tr_onto/BV,Beverwijk railway station,BV,52.4783,4.65611,0.5882352941176471,http://www.group15_KD_tr_onto/240,Schiphol,240,52.318,4.79,160,82,130,50,250
+19,http://www.group15_KD_tr_onto/CAS,Castricum railway station,CAS,52.5456,4.65889,0.6578947368421053,http://www.group15_KD_tr_onto/240,Schiphol,240,52.318,4.79,160,82,130,50,250
+20,http://www.group15_KD_tr_onto/DMNZ,Diemen Zuid station,DMNZ,52.3303,4.95639,0.3283582089552239,http://www.group15_KD_tr_onto/240,Schiphol,240,52.318,4.79,160,82,130,50,250
+21,http://www.group15_KD_tr_onto/DMN,Diemen railway station,DMN,52.3453,4.96694,0.45454545454545453,http://www.group15_KD_tr_onto/240,Schiphol,240,52.318,4.79,160,82,130,50,250
+22,http://www.group15_KD_tr_onto/HAD,Heemstede-Aerdenhout railway station,HAD,52.3597,4.60694,0.5874439461883408,http://www.group15_KD_tr_onto/240,Schiphol,240,52.318,4.79,160,82,130,50,250
+23,http://www.group15_KD_tr_onto/HFD,Hoofddorp railway station,HFD,52.2933,4.7,0.4860557768924303,http://www.group15_KD_tr_onto/240,Schiphol,240,52.318,4.79,160,82,130,50,250
+24,http://www.group15_KD_tr_onto/HIL,Hillegom railway station,HIL,52.3028,4.56583,0.6455696202531646,http://www.group15_KD_tr_onto/240,Schiphol,240,52.318,4.79,160,82,130,50,250
+25,http://www.group15_KD_tr_onto/HK,Heemskerk railway station,HK,52.4947,4.68611,0.47435897435897434,http://www.group15_KD_tr_onto/240,Schiphol,240,52.318,4.79,160,82,130,50,250
+26,http://www.group15_KD_tr_onto/HLMS,Haarlem Spaarnwoude railway station,HLMS,52.3828,4.67111,0.6644736842105263,http://www.group15_KD_tr_onto/240,Schiphol,240,52.318,4.79,160,82,130,50,250
+27,http://www.group15_KD_tr_onto/HLM,Haarlem railway station,HLM,52.3878,4.63889,0.46839080459770116,http://www.group15_KD_tr_onto/240,Schiphol,240,52.318,4.79,160,82,130,50,250
+28,http://www.group15_KD_tr_onto/HLO,Heiloo railway station,HLO,52.6,4.70083,0.6871508379888268,http://www.group15_KD_tr_onto/240,Schiphol,240,52.318,4.79,160,82,130,50,250
+29,http://www.group15_KD_tr_onto/HWZB,Halfweg-Zwanenburg railway station,HWZB,52.3847,4.75167,0.5328947368421053,http://www.group15_KD_tr_onto/240,Schiphol,240,52.318,4.79,160,82,130,50,250
+30,http://www.group15_KD_tr_onto/NVP,Nieuw-Vennep railway station,NVP,52.2597,4.64556,0.45925925925925926,http://www.group15_KD_tr_onto/240,Schiphol,240,52.318,4.79,160,82,130,50,250
+31,http://www.group15_KD_tr_onto/OVN,Overveen railway station,OVN,52.3908,4.60778,0.23684210526315788,http://www.group15_KD_tr_onto/240,Schiphol,240,52.318,4.79,160,82,130,50,250
+32,http://www.group15_KD_tr_onto/PMR,Purmerend railway station,PMR,52.5033,4.95417,0.5584415584415584,http://www.group15_KD_tr_onto/240,Schiphol,240,52.318,4.79,160,82,130,50,250
+33,http://www.group15_KD_tr_onto/PMW,Purmerend Weidevenne railway station,PMW,52.4967,4.93667,0.5714285714285714,http://www.group15_KD_tr_onto/240,Schiphol,240,52.318,4.79,160,82,130,50,250
+34,http://www.group15_KD_tr_onto/RAI,Amsterdam RAI station,RAI,52.3367,4.89056,0.26865671641791045,http://www.group15_KD_tr_onto/240,Schiphol,240,52.318,4.79,160,82,130,50,250
+35,http://www.group15_KD_tr_onto/SHL,Schiphol Airport railway station,SHL,52.3089,4.76167,1.9029649595687332,http://www.group15_KD_tr_onto/240,Schiphol,240,52.318,4.79,160,82,130,50,250
+36,http://www.group15_KD_tr_onto/SPTN,Santpoort Noord railway station,SPTN,52.4428,4.63917,0.4358974358974359,http://www.group15_KD_tr_onto/240,Schiphol,240,52.318,4.79,160,82,130,50,250
+37,http://www.group15_KD_tr_onto/SPTZ,Santpoort Zuid railway station,SPTZ,52.4194,4.63167,0.5,http://www.group15_KD_tr_onto/240,Schiphol,240,52.318,4.79,160,82,130,50,250
+38,http://www.group15_KD_tr_onto/UTG,Uitgeest railway station,UTG,52.5219,4.70278,0.875,http://www.group15_KD_tr_onto/240,Schiphol,240,52.318,4.79,160,82,130,50,250
+39,http://www.group15_KD_tr_onto/WM,Wormerveer railway station,WM,52.4892,4.79278,1.1374045801526718,http://www.group15_KD_tr_onto/240,Schiphol,240,52.318,4.79,160,82,130,50,250
+40,http://www.group15_KD_tr_onto/WP,Weesp railway station,WP,52.3131,5.04361,0.3645833333333333,http://www.group15_KD_tr_onto/240,Schiphol,240,52.318,4.79,160,82,130,50,250
+41,http://www.group15_KD_tr_onto/ZD,Zaandam railway station,ZD,52.4389,4.81472,0.6435045317220544,http://www.group15_KD_tr_onto/240,Schiphol,240,52.318,4.79,160,82,130,50,250
+42,http://www.group15_KD_tr_onto/ZVT,Zandvoort aan Zee railway station,ZVT,52.3758,4.53139,0.5,http://www.group15_KD_tr_onto/240,Schiphol,240,52.318,4.79,160,82,130,50,250
+43,http://www.group15_KD_tr_onto/AKL,Arkel railway station,AKL,51.8719,4.99278,0.20512820512820512,http://www.group15_KD_tr_onto/260,De Bilt,260,52.1,5.18,110,80,192,48,251
+44,http://www.group15_KD_tr_onto/BHV,Bilthoven railway station,BHV,52.13,5.20528,0.8859060402684564,http://www.group15_KD_tr_onto/260,De Bilt,260,52.1,5.18,110,80,192,48,251
+45,http://www.group15_KD_tr_onto/BKL,Breukelen railway station,BKL,52.17,4.99056,0.757396449704142,http://www.group15_KD_tr_onto/260,De Bilt,260,52.1,5.18,110,80,192,48,251
+46,http://www.group15_KD_tr_onto/BNK,Bunnik railway station,BNK,52.0631,5.19556,0.32,http://www.group15_KD_tr_onto/260,De Bilt,260,52.1,5.18,110,80,192,48,251
+47,http://www.group15_KD_tr_onto/BSD,Beesd railway station,BSD,51.8992,5.195,0.47435897435897434,http://www.group15_KD_tr_onto/260,De Bilt,260,52.1,5.18,110,80,192,48,251
+48,http://www.group15_KD_tr_onto/CL,Culemborg railway station,CL,51.9472,5.22722,0.775,http://www.group15_KD_tr_onto/260,De Bilt,260,52.1,5.18,110,80,192,48,251
+49,http://www.group15_KD_tr_onto/DB,Driebergen-Zeist railway station,DB,52.065,5.26,0.39361702127659576,http://www.group15_KD_tr_onto/260,De Bilt,260,52.1,5.18,110,80,192,48,251
+50,http://www.group15_KD_tr_onto/GDM,Geldermalsen railway station,GDM,51.8839,5.27083,0.96,http://www.group15_KD_tr_onto/260,De Bilt,260,52.1,5.18,110,80,192,48,251
+51,http://www.group15_KD_tr_onto/HTN,Houten railway station,HTN,52.0344,5.16778,0.8232044198895028,http://www.group15_KD_tr_onto/260,De Bilt,260,52.1,5.18,110,80,192,48,251
+52,http://www.group15_KD_tr_onto/LDM,Leerdam railway station,LDM,51.8947,5.09333,0.34615384615384615,http://www.group15_KD_tr_onto/260,De Bilt,260,52.1,5.18,110,80,192,48,251
+53,http://www.group15_KD_tr_onto/MAS,Maarssen railway station,MAS,52.1358,5.03306,0.4122137404580153,http://www.group15_KD_tr_onto/260,De Bilt,260,52.1,5.18,110,80,192,48,251
+54,http://www.group15_KD_tr_onto/UTLR,Utrecht Leidsche Rijn railway station,UTLR,52.0983,5.06917,0.5306122448979592,http://www.group15_KD_tr_onto/260,De Bilt,260,52.1,5.18,110,80,192,48,251
+55,http://www.group15_KD_tr_onto/UTO,Utrecht Overvecht railway station,UTO,52.11,5.12528,0.5123674911660777,http://www.group15_KD_tr_onto/260,De Bilt,260,52.1,5.18,110,80,192,48,251
+56,http://www.group15_KD_tr_onto/UTT,Utrecht Terwijde railway station,UTT,52.1008,5.04306,0.4897959183673469,http://www.group15_KD_tr_onto/260,De Bilt,260,52.1,5.18,110,80,192,48,251
+57,http://www.group15_KD_tr_onto/UTVR,Utrecht Vaartsche Rijn railway station,UTVR,52.0786,5.1225,0.6045751633986928,http://www.group15_KD_tr_onto/260,De Bilt,260,52.1,5.18,110,80,192,48,251
+58,http://www.group15_KD_tr_onto/UTZL,Utrecht Zuilen railway station,UTZL,52.1031,5.08917,0.3769230769230769,http://www.group15_KD_tr_onto/260,De Bilt,260,52.1,5.18,110,80,192,48,251
+59,http://www.group15_KD_tr_onto/UT,Utrecht Centraal railway station,UT,52.0892,5.10972,0.9923298178331735,http://www.group15_KD_tr_onto/260,De Bilt,260,52.1,5.18,110,80,192,48,251
+60,http://www.group15_KD_tr_onto/VTN,Vleuten railway station,VTN,52.1031,5.01194,0.6122448979591837,http://www.group15_KD_tr_onto/260,De Bilt,260,52.1,5.18,110,80,192,48,251
+61,http://www.group15_KD_tr_onto/WD,Woerden railway station,WD,52.0847,4.89306,0.7656765676567657,http://www.group15_KD_tr_onto/260,De Bilt,260,52.1,5.18,110,80,192,48,251
+62,http://www.group15_KD_tr_onto/ZBM,Zaltbommel railway station,ZBM,51.8069,5.26472,0.6103896103896104,http://www.group15_KD_tr_onto/260,De Bilt,260,52.1,5.18,110,80,192,48,251
+63,http://www.group15_KD_tr_onto/BKF,Bovenkarspel Flora railway station,BKF,52.6958,5.25306,0.12195121951219512,http://www.group15_KD_tr_onto/267,Stavoren,267,52.898,5.384,170,78,103,33,254
+64,http://www.group15_KD_tr_onto/BKG,Bovenkarspel-Grootebroek railway station,BKG,52.695,5.23611,0.15853658536585366,http://www.group15_KD_tr_onto/267,Stavoren,267,52.898,5.384,170,78,103,33,254
+65,http://www.group15_KD_tr_onto/EKZ,Enkhuizen railway station,EKZ,52.6994,5.28778,0.25,http://www.group15_KD_tr_onto/267,Stavoren,267,52.898,5.384,170,78,103,33,254
+66,http://www.group15_KD_tr_onto/HKS,Hoogkarspel railway station,HKS,52.6906,5.18389,0.23170731707317074,http://www.group15_KD_tr_onto/267,Stavoren,267,52.898,5.384,170,78,103,33,254
+67,http://www.group15_KD_tr_onto/HNP,Hindeloopen railway station,HNP,52.9461,5.42306,0.10869565217391304,http://www.group15_KD_tr_onto/267,Stavoren,267,52.898,5.384,170,78,103,33,254
+68,http://www.group15_KD_tr_onto/HN,Hoorn railway station,HN,52.645,5.05472,0.4,http://www.group15_KD_tr_onto/267,Stavoren,267,52.898,5.384,170,78,103,33,254
+69,http://www.group15_KD_tr_onto/IJT,IJlst railway station,IJT,53.0147,5.61639,0.2608695652173913,http://www.group15_KD_tr_onto/267,Stavoren,267,52.898,5.384,170,78,103,33,254
+70,http://www.group15_KD_tr_onto/KMW,Koudum-Molkwerum railway station,KMW,52.9022,5.41056,0.2608695652173913,http://www.group15_KD_tr_onto/267,Stavoren,267,52.898,5.384,170,78,103,33,254
+71,http://www.group15_KD_tr_onto/STV,Stavoren railway station,STV,52.8867,5.35972,0.2608695652173913,http://www.group15_KD_tr_onto/267,Stavoren,267,52.898,5.384,170,78,103,33,254
+72,http://www.group15_KD_tr_onto/WK,Workum railway station,WK,52.9714,5.45583,0.2826086956521739,http://www.group15_KD_tr_onto/267,Stavoren,267,52.898,5.384,170,78,103,33,254
+73,http://www.group15_KD_tr_onto/WV,Wolvega railway station,WV,52.8797,6.00472,0.44776119402985076,http://www.group15_KD_tr_onto/267,Stavoren,267,52.898,5.384,170,78,103,33,254
+74,http://www.group15_KD_tr_onto/ALMB,Almere Buiten railway station,ALMB,52.3942,5.27778,0.24257425742574257,http://www.group15_KD_tr_onto/269,Lelystad,269,52.458,5.52,150,81,193,46,248
+75,http://www.group15_KD_tr_onto/ALMM,Almere Muziekwijk railway station,ALMM,52.3675,5.19028,0.3317972350230415,http://www.group15_KD_tr_onto/269,Lelystad,269,52.458,5.52,150,81,193,46,248
+76,http://www.group15_KD_tr_onto/ALMO,Almere Oostvaarders railway station,ALMO,52.4028,5.3,0.20175438596491227,http://www.group15_KD_tr_onto/269,Lelystad,269,52.458,5.52,150,81,193,46,248
+77,http://www.group15_KD_tr_onto/ALMP,Almere Parkwijk railway station,ALMP,52.3767,5.24444,0.2052980132450331,http://www.group15_KD_tr_onto/269,Lelystad,269,52.458,5.52,150,81,193,46,248
+78,http://www.group15_KD_tr_onto/ALM,Almere Centrum railway station,ALM,52.375,5.21778,0.7319884726224783,http://www.group15_KD_tr_onto/269,Lelystad,269,52.458,5.52,150,81,193,46,248
+79,http://www.group15_KD_tr_onto/DL,Dalfsen railway station,DL,52.4981,6.25861,0.43478260869565216,http://www.group15_KD_tr_onto/269,Lelystad,269,52.458,5.52,150,81,193,46,248
+80,http://www.group15_KD_tr_onto/DRON,Dronten railway station,DRON,52.5339,5.72306,0.09333333333333334,http://www.group15_KD_tr_onto/269,Lelystad,269,52.458,5.52,150,81,193,46,248
+81,http://www.group15_KD_tr_onto/EML,Ermelo railway station,EML,52.3011,5.61444,1.3150684931506849,http://www.group15_KD_tr_onto/269,Lelystad,269,52.458,5.52,150,81,193,46,248
+82,http://www.group15_KD_tr_onto/HDE,'t Harde railway station,HDE,52.4089,5.89306,1.082191780821918,http://www.group15_KD_tr_onto/269,Lelystad,269,52.458,5.52,150,81,193,46,248
+83,http://www.group15_KD_tr_onto/HD,Harderwijk railway station,HD,52.3375,5.61972,1.3717948717948718,http://www.group15_KD_tr_onto/269,Lelystad,269,52.458,5.52,150,81,193,46,248
+84,http://www.group15_KD_tr_onto/KPNZ,Kampen Zuid railway station,KPNZ,52.5342,5.91583,0.05333333333333334,http://www.group15_KD_tr_onto/269,Lelystad,269,52.458,5.52,150,81,193,46,248
+85,http://www.group15_KD_tr_onto/KPN,Kampen railway station,KPN,52.5597,5.92111,0.47368421052631576,http://www.group15_KD_tr_onto/269,Lelystad,269,52.458,5.52,150,81,193,46,248
+86,http://www.group15_KD_tr_onto/LLS,Lelystad Centrum railway station,LLS,52.5078,5.47333,0.7329545454545454,http://www.group15_KD_tr_onto/269,Lelystad,269,52.458,5.52,150,81,193,46,248
+87,http://www.group15_KD_tr_onto/MP,Meppel railway station,MP,52.6914,6.1975,1.062200956937799,http://www.group15_KD_tr_onto/269,Lelystad,269,52.458,5.52,150,81,193,46,248
+88,http://www.group15_KD_tr_onto/NS,Nunspeet railway station,NS,52.3708,5.78472,1.3424657534246576,http://www.group15_KD_tr_onto/269,Lelystad,269,52.458,5.52,150,81,193,46,248
+89,http://www.group15_KD_tr_onto/OMN,Ommen railway station,OMN,52.5094,6.41694,1.065217391304348,http://www.group15_KD_tr_onto/269,Lelystad,269,52.458,5.52,150,81,193,46,248
+90,http://www.group15_KD_tr_onto/PT,Putten railway station,PT,52.2653,5.57611,1.0547945205479452,http://www.group15_KD_tr_onto/269,Lelystad,269,52.458,5.52,150,81,193,46,248
+91,http://www.group15_KD_tr_onto/WZ,Wezep railway station,WZ,52.4536,6.00222,1.095890410958904,http://www.group15_KD_tr_onto/269,Lelystad,269,52.458,5.52,150,81,193,46,248
+92,http://www.group15_KD_tr_onto/ZLSH,Zwolle Stadshagen railway station,ZLSH,52.5279,6.05108,0.2236842105263158,http://www.group15_KD_tr_onto/269,Lelystad,269,52.458,5.52,150,81,193,46,248
+93,http://www.group15_KD_tr_onto/ZL,Zwolle railway station,ZL,52.5053,6.09056,0.9393939393939394,http://www.group15_KD_tr_onto/269,Lelystad,269,52.458,5.52,150,81,193,46,248
+94,http://www.group15_KD_tr_onto/AKM,Akkrum railway station,AKM,53.0472,5.84306,0.5671641791044776,http://www.group15_KD_tr_onto/270,Leeuwarden,270,53.224,5.752,160,78,42,56,253
+95,http://www.group15_KD_tr_onto/DEI,Deinum railway station,DEI,53.1886,5.72778,0.3235294117647059,http://www.group15_KD_tr_onto/270,Leeuwarden,270,53.224,5.752,160,78,42,56,253
+96,http://www.group15_KD_tr_onto/DRP,Dronryp railway station,DRP,53.1775,5.63472,0.22058823529411764,http://www.group15_KD_tr_onto/270,Leeuwarden,270,53.224,5.752,160,78,42,56,253
+97,http://www.group15_KD_tr_onto/FN,Franeker railway station,FN,53.1822,5.54944,0.23529411764705882,http://www.group15_KD_tr_onto/270,Leeuwarden,270,53.224,5.752,160,78,42,56,253
+98,http://www.group15_KD_tr_onto/GW,Grou-Jirnsum railway station,GW,53.0897,5.82222,0.4925373134328358,http://www.group15_KD_tr_onto/270,Leeuwarden,270,53.224,5.752,160,78,42,56,253
+99,http://www.group15_KD_tr_onto/HDG,Hurdegaryp railway station,HDG,53.2186,5.93472,1.1176470588235294,http://www.group15_KD_tr_onto/270,Leeuwarden,270,53.224,5.752,160,78,42,56,253
+100,http://www.group15_KD_tr_onto/HLG,Harlingen railway station,HLG,53.1703,5.42528,0.19117647058823528,http://www.group15_KD_tr_onto/270,Leeuwarden,270,53.224,5.752,160,78,42,56,253
+101,http://www.group15_KD_tr_onto/HR,Heerenveen railway station,HR,52.9606,5.91528,1.1102941176470589,http://www.group15_KD_tr_onto/270,Leeuwarden,270,53.224,5.752,160,78,42,56,253
+102,http://www.group15_KD_tr_onto/LW,Leeuwarden railway station,LW,53.1958,5.79111,1.0631067961165048,http://www.group15_KD_tr_onto/270,Leeuwarden,270,53.224,5.752,160,78,42,56,253
+103,http://www.group15_KD_tr_onto/MG,Mantgum railway station,MG,53.1297,5.71333,0.7205882352941176,http://www.group15_KD_tr_onto/270,Leeuwarden,270,53.224,5.752,160,78,42,56,253
+104,http://www.group15_KD_tr_onto/SK,Sneek railway station,SK,53.0322,5.65167,0.5384615384615384,http://www.group15_KD_tr_onto/270,Leeuwarden,270,53.224,5.752,160,78,42,56,253
+105,http://www.group15_KD_tr_onto/AHPR,Arnhem Presikhaaf railway station,AHPR,51.9875,5.94306,0.7183098591549296,http://www.group15_KD_tr_onto/275,Deelen,275,52.056,5.873,130,76,213,9,247
+106,http://www.group15_KD_tr_onto/AHZ,Arnhem Zuid railway station,AHZ,51.9542,5.85167,0.2835820895522388,http://www.group15_KD_tr_onto/275,Deelen,275,52.056,5.873,130,76,213,9,247
+107,http://www.group15_KD_tr_onto/AML,Almelo railway station,AML,52.3572,6.655,0.75,http://www.group15_KD_tr_onto/275,Deelen,275,52.056,5.873,130,76,213,9,247
+108,http://www.group15_KD_tr_onto/APD,Apeldoorn railway station,APD,52.2092,5.96944,0.7206703910614525,http://www.group15_KD_tr_onto/275,Deelen,275,52.056,5.873,130,76,213,9,247
+109,http://www.group15_KD_tr_onto/ATN,Aalten railway station,ATN,51.9211,6.57806,0.33783783783783783,http://www.group15_KD_tr_onto/275,Deelen,275,52.056,5.873,130,76,213,9,247
+110,http://www.group15_KD_tr_onto/BMN,Brummen railway station,BMN,52.0908,6.14694,0.43661971830985913,http://www.group15_KD_tr_onto/275,Deelen,275,52.056,5.873,130,76,213,9,247
+111,http://www.group15_KD_tr_onto/BN,Borne railway station,BN,52.2983,6.74833,0.23655913978494625,http://www.group15_KD_tr_onto/275,Deelen,275,52.056,5.873,130,76,213,9,247
+112,http://www.group15_KD_tr_onto/CK,Cuijk railway station,CK,51.7264,5.87417,0.44871794871794873,http://www.group15_KD_tr_onto/275,Deelen,275,52.056,5.873,130,76,213,9,247
+113,http://www.group15_KD_tr_onto/DA,Daarlerveen railway station,DA,52.4411,6.57583,0.35185185185185186,http://www.group15_KD_tr_onto/275,Deelen,275,52.056,5.873,130,76,213,9,247
+114,http://www.group15_KD_tr_onto/DDN,Delden railway station,DDN,52.26,6.71444,0.5540540540540541,http://www.group15_KD_tr_onto/275,Deelen,275,52.056,5.873,130,76,213,9,247
+115,http://www.group15_KD_tr_onto/DID,Didam railway station,DID,51.9333,6.13222,0.7131782945736435,http://www.group15_KD_tr_onto/275,Deelen,275,52.056,5.873,130,76,213,9,247
+116,http://www.group15_KD_tr_onto/DR,Dieren railway station,DR,52.045,6.10333,0.7012987012987013,http://www.group15_KD_tr_onto/275,Deelen,275,52.056,5.873,130,76,213,9,247
+117,http://www.group15_KD_tr_onto/DTC,Doetinchem railway station,DTC,51.9583,6.29528,0.77,http://www.group15_KD_tr_onto/275,Deelen,275,52.056,5.873,130,76,213,9,247
+118,http://www.group15_KD_tr_onto/DVN,Duiven railway station,DVN,51.9433,6.01417,0.8527131782945736,http://www.group15_KD_tr_onto/275,Deelen,275,52.056,5.873,130,76,213,9,247
+119,http://www.group15_KD_tr_onto/DV,Deventer railway station,DV,52.2572,6.16083,0.8267716535433071,http://www.group15_KD_tr_onto/275,Deelen,275,52.056,5.873,130,76,213,9,247
+120,http://www.group15_KD_tr_onto/ED,Ede-Wageningen railway station,ED,52.0278,5.67194,0.30985915492957744,http://www.group15_KD_tr_onto/275,Deelen,275,52.056,5.873,130,76,213,9,247
+121,http://www.group15_KD_tr_onto/EST,Elst railway station,EST,51.9167,5.855,0.22564102564102564,http://www.group15_KD_tr_onto/275,Deelen,275,52.056,5.873,130,76,213,9,247
+122,http://www.group15_KD_tr_onto/ES,Enschede railway station,ES,52.2222,6.89,0.6717557251908397,http://www.group15_KD_tr_onto/275,Deelen,275,52.056,5.873,130,76,213,9,247
+123,http://www.group15_KD_tr_onto/GBR,Glanerbrug railway station,GBR,52.2186,6.97389,0.0,http://www.group15_KD_tr_onto/275,Deelen,275,52.056,5.873,130,76,213,9,247
+124,http://www.group15_KD_tr_onto/GDR,Gaanderen railway station,GDR,51.9308,6.34778,0.7567567567567568,http://www.group15_KD_tr_onto/275,Deelen,275,52.056,5.873,130,76,213,9,247
+125,http://www.group15_KD_tr_onto/GO,Goor railway station,GO,52.2303,6.58444,0.2054794520547945,http://www.group15_KD_tr_onto/275,Deelen,275,52.056,5.873,130,76,213,9,247
+126,http://www.group15_KD_tr_onto/HGL,Hengelo railway station,HGL,52.2619,6.79417,0.7674418604651163,http://www.group15_KD_tr_onto/275,Deelen,275,52.056,5.873,130,76,213,9,247
+127,http://www.group15_KD_tr_onto/HMN,Hemmen-Dodewaard railway station,HMN,51.9222,5.67333,0.078125,http://www.group15_KD_tr_onto/275,Deelen,275,52.056,5.873,130,76,213,9,247
+128,http://www.group15_KD_tr_onto/HNO,Heino railway station,HNO,52.4269,6.22194,0.06578947368421052,http://www.group15_KD_tr_onto/275,Deelen,275,52.056,5.873,130,76,213,9,247
+129,http://www.group15_KD_tr_onto/HON,Holten railway station,HON,52.2839,6.42056,0.375,http://www.group15_KD_tr_onto/275,Deelen,275,52.056,5.873,130,76,213,9,247
+130,http://www.group15_KD_tr_onto/KBK,Klarenbeek railway station,KBK,52.1778,6.08417,0.0625,http://www.group15_KD_tr_onto/275,Deelen,275,52.056,5.873,130,76,213,9,247
+131,http://www.group15_KD_tr_onto/KLP,Veenendaal-De Klomp railway station,KLP,52.0458,5.57389,0.4675324675324675,http://www.group15_KD_tr_onto/275,Deelen,275,52.056,5.873,130,76,213,9,247
+132,http://www.group15_KD_tr_onto/KTR,Kesteren railway station,KTR,51.9314,5.58361,0.046875,http://www.group15_KD_tr_onto/275,Deelen,275,52.056,5.873,130,76,213,9,247
+133,http://www.group15_KD_tr_onto/LC,Lochem railway station,LC,52.1667,6.42583,0.2361111111111111,http://www.group15_KD_tr_onto/275,Deelen,275,52.056,5.873,130,76,213,9,247
+134,http://www.group15_KD_tr_onto/LTV,Lichtenvoorde-Groenlo railway station,LTV,52.0117,6.59639,0.3333333333333333,http://www.group15_KD_tr_onto/275,Deelen,275,52.056,5.873,130,76,213,9,247
+135,http://www.group15_KD_tr_onto/MMLH,Mook-Molenhoek railway station,MMLH,51.7647,5.8775,0.6125,http://www.group15_KD_tr_onto/275,Deelen,275,52.056,5.873,130,76,213,9,247
+136,http://www.group15_KD_tr_onto/NM,Nijmegen railway station,NM,51.8433,5.8525,0.7217125382262997,http://www.group15_KD_tr_onto/275,Deelen,275,52.056,5.873,130,76,213,9,247
+137,http://www.group15_KD_tr_onto/NVD,Nijverdal railway station,NVD,52.3656,6.47028,0.6568627450980392,http://www.group15_KD_tr_onto/275,Deelen,275,52.056,5.873,130,76,213,9,247
+138,http://www.group15_KD_tr_onto/ODZ,Oldenzaal railway station,ODZ,52.3061,6.93361,0.5974025974025974,http://www.group15_KD_tr_onto/275,Deelen,275,52.056,5.873,130,76,213,9,247
+139,http://www.group15_KD_tr_onto/OP,Opheusden railway station,OP,51.9261,5.63694,0.0625,http://www.group15_KD_tr_onto/275,Deelen,275,52.056,5.873,130,76,213,9,247
+140,http://www.group15_KD_tr_onto/OST,Olst railway station,OST,52.335,6.11306,0.7176470588235294,http://www.group15_KD_tr_onto/275,Deelen,275,52.056,5.873,130,76,213,9,247
+141,http://www.group15_KD_tr_onto/OTB,Oosterbeek railway station,OTB,51.9947,5.84,0.36363636363636365,http://www.group15_KD_tr_onto/275,Deelen,275,52.056,5.873,130,76,213,9,247
+142,http://www.group15_KD_tr_onto/RAT,Raalte railway station,RAT,52.3908,6.27861,0.21568627450980393,http://www.group15_KD_tr_onto/275,Deelen,275,52.056,5.873,130,76,213,9,247
+143,http://www.group15_KD_tr_onto/RHN,Rhenen railway station,RHN,51.9578,5.57833,0.02702702702702703,http://www.group15_KD_tr_onto/275,Deelen,275,52.056,5.873,130,76,213,9,247
+144,http://www.group15_KD_tr_onto/RH,Rheden railway station,RH,52.0097,6.02972,0.5211267605633803,http://www.group15_KD_tr_onto/275,Deelen,275,52.056,5.873,130,76,213,9,247
+145,http://www.group15_KD_tr_onto/RL,Ruurlo railway station,RL,52.0806,6.45,0.3188405797101449,http://www.group15_KD_tr_onto/275,Deelen,275,52.056,5.873,130,76,213,9,247
+146,http://www.group15_KD_tr_onto/RSN,Rijssen railway station,RSN,52.3117,6.51917,0.25,http://www.group15_KD_tr_onto/275,Deelen,275,52.056,5.873,130,76,213,9,247
+147,http://www.group15_KD_tr_onto/RVS,Ravenstein railway station,RVS,51.7947,5.63722,1.0138888888888888,http://www.group15_KD_tr_onto/275,Deelen,275,52.056,5.873,130,76,213,9,247
+148,http://www.group15_KD_tr_onto/TWL,Twello railway station,TWL,52.2381,6.1,0.3484848484848485,http://www.group15_KD_tr_onto/275,Deelen,275,52.056,5.873,130,76,213,9,247
+149,http://www.group15_KD_tr_onto/VEM,Voorst-Empe railway station,VEM,52.1578,6.14278,0.09375,http://www.group15_KD_tr_onto/275,Deelen,275,52.056,5.873,130,76,213,9,247
+150,http://www.group15_KD_tr_onto/VHP,Vroomshoop railway station,VHP,52.4411,6.57583,0.24074074074074073,http://www.group15_KD_tr_onto/275,Deelen,275,52.056,5.873,130,76,213,9,247
+151,http://www.group15_KD_tr_onto/VP,Arnhem Velperpoort railway station,VP,51.985,5.92,0.5211267605633803,http://www.group15_KD_tr_onto/275,Deelen,275,52.056,5.873,130,76,213,9,247
+152,http://www.group15_KD_tr_onto/VSV,Varsseveld railway station,VSV,51.9369,6.45806,0.5540540540540541,http://www.group15_KD_tr_onto/275,Deelen,275,52.056,5.873,130,76,213,9,247
+153,http://www.group15_KD_tr_onto/VZ,Vriezenveen railway station,VZ,52.4019,6.60028,0.3333333333333333,http://www.group15_KD_tr_onto/275,Deelen,275,52.056,5.873,130,76,213,9,247
+154,http://www.group15_KD_tr_onto/WC,Wijchen railway station,WC,51.8111,5.72944,0.7425742574257426,http://www.group15_KD_tr_onto/275,Deelen,275,52.056,5.873,130,76,213,9,247
+155,http://www.group15_KD_tr_onto/WDN,Wierden railway station,WDN,52.3614,6.59111,0.20945945945945946,http://www.group15_KD_tr_onto/275,Deelen,275,52.056,5.873,130,76,213,9,247
+156,http://www.group15_KD_tr_onto/WF,Wolfheze railway station,WF,52.0053,5.79361,0.25757575757575757,http://www.group15_KD_tr_onto/275,Deelen,275,52.056,5.873,130,76,213,9,247
+157,http://www.group15_KD_tr_onto/WH,Wijhe railway station,WH,52.3936,6.14083,1.0235294117647058,http://www.group15_KD_tr_onto/275,Deelen,275,52.056,5.873,130,76,213,9,247
+158,http://www.group15_KD_tr_onto/WL,Wehl railway station,WL,51.9567,6.2125,0.875968992248062,http://www.group15_KD_tr_onto/275,Deelen,275,52.056,5.873,130,76,213,9,247
+159,http://www.group15_KD_tr_onto/WWW,Winterswijk West railway station,WWW,51.9744,6.70361,0.2463768115942029,http://www.group15_KD_tr_onto/275,Deelen,275,52.056,5.873,130,76,213,9,247
+160,http://www.group15_KD_tr_onto/WW,Winterswijk railway station,WW,51.9675,6.71556,0.4305555555555556,http://www.group15_KD_tr_onto/275,Deelen,275,52.056,5.873,130,76,213,9,247
+161,http://www.group15_KD_tr_onto/ZA,Zetten-Andelst railway station,ZA,51.9194,5.72306,0.125,http://www.group15_KD_tr_onto/275,Deelen,275,52.056,5.873,130,76,213,9,247
+162,http://www.group15_KD_tr_onto/ZP,Zutphen railway station,ZP,52.1444,6.19389,0.6133333333333333,http://www.group15_KD_tr_onto/275,Deelen,275,52.056,5.873,130,76,213,9,247
+163,http://www.group15_KD_tr_onto/ZV,Zevenaar railway station,ZV,51.9231,6.07278,1.9393939393939394,http://www.group15_KD_tr_onto/275,Deelen,275,52.056,5.873,130,76,213,9,247
+164,http://www.group15_KD_tr_onto/ASN,Assen railway station,ASN,52.9917,6.57056,0.9044585987261147,http://www.group15_KD_tr_onto/280,Eelde,280,53.125,6.585,130,75,127,56,247
+165,http://www.group15_KD_tr_onto/BF,Baflo railway station,BF,53.3608,6.51833,0.8157894736842105,http://www.group15_KD_tr_onto/280,Eelde,280,53.125,6.585,130,75,127,56,247
+166,http://www.group15_KD_tr_onto/BL,Beilen railway station,BL,52.8547,6.52083,0.72,http://www.group15_KD_tr_onto/280,Eelde,280,53.125,6.585,130,75,127,56,247
+167,http://www.group15_KD_tr_onto/DLN,Dalen railway station,DLN,52.6944,6.75806,0.06382978723404255,http://www.group15_KD_tr_onto/280,Eelde,280,53.125,6.585,130,75,127,56,247
+168,http://www.group15_KD_tr_onto/EMNZ,Emmen Zuid railway station,EMNZ,52.7489,6.87472,0.23170731707317074,http://www.group15_KD_tr_onto/280,Eelde,280,53.125,6.585,130,75,127,56,247
+169,http://www.group15_KD_tr_onto/EMN,Emmen railway station,EMN,52.7903,6.89917,0.2682926829268293,http://www.group15_KD_tr_onto/280,Eelde,280,53.125,6.585,130,75,127,56,247
+170,http://www.group15_KD_tr_onto/GBG,Gramsbergen railway station,GBG,52.6094,6.67583,0.851063829787234,http://www.group15_KD_tr_onto/280,Eelde,280,53.125,6.585,130,75,127,56,247
+171,http://www.group15_KD_tr_onto/GK,Grijpskerk railway station,GK,53.2556,6.31056,0.6323529411764706,http://www.group15_KD_tr_onto/280,Eelde,280,53.125,6.585,130,75,127,56,247
+172,http://www.group15_KD_tr_onto/GN,Groningen railway station,GN,53.2106,6.56472,0.8240740740740741,http://www.group15_KD_tr_onto/280,Eelde,280,53.125,6.585,130,75,127,56,247
+173,http://www.group15_KD_tr_onto/HDB,Hardenberg railway station,HDB,52.5722,6.62778,0.4322033898305085,http://www.group15_KD_tr_onto/280,Eelde,280,53.125,6.585,130,75,127,56,247
+174,http://www.group15_KD_tr_onto/HGV,Hoogeveen railway station,HGV,52.7333,6.4725,0.3333333333333333,http://www.group15_KD_tr_onto/280,Eelde,280,53.125,6.585,130,75,127,56,247
+175,http://www.group15_KD_tr_onto/HRN,Haren (NL) railway station,HRN,53.175,6.61778,0.3939393939393939,http://www.group15_KD_tr_onto/280,Eelde,280,53.125,6.585,130,75,127,56,247
+176,http://www.group15_KD_tr_onto/KW,Kropswolde railway station,KW,53.1617,6.72139,0.7642857142857142,http://www.group15_KD_tr_onto/280,Eelde,280,53.125,6.585,130,75,127,56,247
+177,http://www.group15_KD_tr_onto/NA,Nieuw Amsterdam railway station,NA,52.7186,6.84861,0.3157894736842105,http://www.group15_KD_tr_onto/280,Eelde,280,53.125,6.585,130,75,127,56,247
+178,http://www.group15_KD_tr_onto/NSCH,Bad Nieuweschans railway station,NSCH,53.1842,7.19944,1.0256410256410255,http://www.group15_KD_tr_onto/280,Eelde,280,53.125,6.585,130,75,127,56,247
+179,http://www.group15_KD_tr_onto/SWK,Steenwijk railway station,SWK,52.7908,6.11611,1.0661764705882353,http://www.group15_KD_tr_onto/280,Eelde,280,53.125,6.585,130,75,127,56,247
+180,http://www.group15_KD_tr_onto/VDM,Veendam railway station,VDM,53.1036,6.88472,0.2571428571428571,http://www.group15_KD_tr_onto/280,Eelde,280,53.125,6.585,130,75,127,56,247
+181,http://www.group15_KD_tr_onto/VD,Coevorden railway station,VD,52.6631,6.73556,0.6521739130434783,http://www.group15_KD_tr_onto/280,Eelde,280,53.125,6.585,130,75,127,56,247
+182,http://www.group15_KD_tr_onto/BGN,Bergen op Zoom railway station,BGN,51.4947,4.29611,0.5094339622641509,http://www.group15_KD_tr_onto/340,Woensdrecht,340,51.449,4.342,150,93,93,8,254
+183,http://www.group15_KD_tr_onto/KBD,Krabbendijke railway station,KBD,51.4333,4.11694,0.48,http://www.group15_KD_tr_onto/340,Woensdrecht,340,51.449,4.342,150,93,93,8,254
+184,http://www.group15_KD_tr_onto/KRG,Kruiningen-Yerseke railway station,KRG,51.4653,4.03694,0.30666666666666664,http://www.group15_KD_tr_onto/340,Woensdrecht,340,51.449,4.342,150,93,93,8,254
+185,http://www.group15_KD_tr_onto/ODB,Oudenbosch railway station,ODB,51.5881,4.53361,0.391304347826087,http://www.group15_KD_tr_onto/340,Woensdrecht,340,51.449,4.342,150,93,93,8,254
+186,http://www.group15_KD_tr_onto/RB,Rilland-Bath railway station,RB,51.4222,4.16111,0.56,http://www.group15_KD_tr_onto/340,Woensdrecht,340,51.449,4.342,150,93,93,8,254
+187,http://www.group15_KD_tr_onto/RSD,Roosendaal railway station,RSD,51.5403,4.45889,1.4228855721393034,http://www.group15_KD_tr_onto/340,Woensdrecht,340,51.449,4.342,150,93,93,8,254
+188,http://www.group15_KD_tr_onto/BSKS,Boskoop Snijdelwijk railway station,BSKS,52.0676,4.6462,0.23846153846153847,http://www.group15_KD_tr_onto/344,Rotterdam,344,51.962,4.447,140,88,111,56,251
+189,http://www.group15_KD_tr_onto/CPS,Capelle Schollevaar railway station,CPS,51.9533,4.58417,0.7663551401869159,http://www.group15_KD_tr_onto/344,Rotterdam,344,51.962,4.447,140,88,111,56,251
+190,http://www.group15_KD_tr_onto/DT,Rotterdam Delftsche Poort railway station,DT,51.9253,4.47361,1.02710027100271,http://www.group15_KD_tr_onto/344,Rotterdam,344,51.962,4.447,140,88,111,56,251
+191,http://www.group15_KD_tr_onto/EC,Dordrecht railway station,EC,51.8075,4.66778,0.7432432432432432,http://www.group15_KD_tr_onto/344,Rotterdam,344,51.962,4.447,140,88,111,56,251
+192,http://www.group15_KD_tr_onto/GD,Gouda railway station,GD,52.0175,4.70556,0.5008460236886633,http://www.group15_KD_tr_onto/344,Rotterdam,344,51.962,4.447,140,88,111,56,251
+193,http://www.group15_KD_tr_onto/GVMW,Den Haag Moerwijk railway station,GVMW,52.0533,4.30861,0.3597122302158273,http://www.group15_KD_tr_onto/344,Rotterdam,344,51.962,4.447,140,88,111,56,251
+194,http://www.group15_KD_tr_onto/NWK,Nieuwerkerk aan den IJssel railway station,NWK,51.9653,4.61694,0.8691588785046729,http://www.group15_KD_tr_onto/344,Rotterdam,344,51.962,4.447,140,88,111,56,251
+195,http://www.group15_KD_tr_onto/RLB,Rotterdam Lombardijen railway station,RLB,51.8797,4.53111,0.5642857142857143,http://www.group15_KD_tr_onto/344,Rotterdam,344,51.962,4.447,140,88,111,56,251
+196,http://www.group15_KD_tr_onto/RSW,Rijswijk railway station,RSW,52.0394,4.31972,0.38848920863309355,http://www.group15_KD_tr_onto/344,Rotterdam,344,51.962,4.447,140,88,111,56,251
+197,http://www.group15_KD_tr_onto/RTA,Rotterdam Alexander station,RTA,51.9519,4.55278,0.8360655737704918,http://www.group15_KD_tr_onto/344,Rotterdam,344,51.962,4.447,140,88,111,56,251
+198,http://www.group15_KD_tr_onto/RTB,Rotterdam Blaak station,RTB,51.92,4.48917,0.6620689655172414,http://www.group15_KD_tr_onto/344,Rotterdam,344,51.962,4.447,140,88,111,56,251
+199,http://www.group15_KD_tr_onto/RTD,Rotterdam Centraal station,RTD,51.9244,4.46944,2.3056,http://www.group15_KD_tr_onto/344,Rotterdam,344,51.962,4.447,140,88,111,56,251
+200,http://www.group15_KD_tr_onto/RTN,Rotterdam Noord railway station,RTN,51.9422,4.48139,0.9065420560747663,http://www.group15_KD_tr_onto/344,Rotterdam,344,51.962,4.447,140,88,111,56,251
+201,http://www.group15_KD_tr_onto/RTST,Rotterdam Stadion railway station,RTST,51.8939,4.52,2.25,http://www.group15_KD_tr_onto/344,Rotterdam,344,51.962,4.447,140,88,111,56,251
+202,http://www.group15_KD_tr_onto/RTZ,Rotterdam Zuid railway station,RTZ,51.9094,4.50944,0.4676258992805755,http://www.group15_KD_tr_onto/344,Rotterdam,344,51.962,4.447,140,88,111,56,251
+203,http://www.group15_KD_tr_onto/SDM,Schiedam Centrum station,SDM,51.9219,4.41,0.4134275618374558,http://www.group15_KD_tr_onto/344,Rotterdam,344,51.962,4.447,140,88,111,56,251
+204,http://www.group15_KD_tr_onto/SDT,Sliedrecht Baanhoek railway station,SDT,51.8297,4.74333,0.9037037037037037,http://www.group15_KD_tr_onto/344,Rotterdam,344,51.962,4.447,140,88,111,56,251
+205,http://www.group15_KD_tr_onto/YPB,Den Haag Ypenburg railway station,YPB,52.0592,4.38972,0.16083916083916083,http://www.group15_KD_tr_onto/344,Rotterdam,344,51.962,4.447,140,88,111,56,251
+206,http://www.group15_KD_tr_onto/ZTM,Lansingerland-Zoetermeer railway station,ZTM,52.0394,4.52556,0.16083916083916083,http://www.group15_KD_tr_onto/344,Rotterdam,344,51.962,4.447,140,88,111,56,251
+207,http://www.group15_KD_tr_onto/ZWD,Zwijndrecht railway station,ZWD,51.8147,4.64222,0.5531914893617021,http://www.group15_KD_tr_onto/344,Rotterdam,344,51.962,4.447,140,88,111,56,251
+208,http://www.group15_KD_tr_onto/BD,Breda railway station,BD,51.595,4.78,2.3929712460063897,http://www.group15_KD_tr_onto/350,Gilze-Rijen,350,51.566,4.936,140,93,98,57,253
+209,http://www.group15_KD_tr_onto/BHDV,Boven Hardinxveld railway station,BHDV,51.8319,4.87472,0.42962962962962964,http://www.group15_KD_tr_onto/350,Gilze-Rijen,350,51.566,4.936,140,93,98,57,253
+210,http://www.group15_KD_tr_onto/ETN,Etten-Leur railway station,ETN,51.5753,4.63694,0.4367816091954023,http://www.group15_KD_tr_onto/350,Gilze-Rijen,350,51.566,4.936,140,93,98,57,253
+211,http://www.group15_KD_tr_onto/GND,Hardinxveld-Giessendam railway station,GND,51.8303,4.83528,0.9481481481481482,http://www.group15_KD_tr_onto/350,Gilze-Rijen,350,51.566,4.936,140,93,98,57,253
+212,http://www.group15_KD_tr_onto/GR,Gorinchem railway station,GR,51.8336,4.9675,0.5377358490566038,http://www.group15_KD_tr_onto/350,Gilze-Rijen,350,51.566,4.936,140,93,98,57,253
+213,http://www.group15_KD_tr_onto/GZ,Gilze-Rijen railway station,GZ,51.5839,4.925,1.2763157894736843,http://www.group15_KD_tr_onto/350,Gilze-Rijen,350,51.566,4.936,140,93,98,57,253
+214,http://www.group15_KD_tr_onto/OT,Oisterwijk railway station,OT,51.5822,5.19444,0.6811594202898551,http://www.group15_KD_tr_onto/350,Gilze-Rijen,350,51.566,4.936,140,93,98,57,253
+215,http://www.group15_KD_tr_onto/TBR,Tilburg Reeshof railway station,TBR,51.5739,4.99278,1.355263157894737,http://www.group15_KD_tr_onto/350,Gilze-Rijen,350,51.566,4.936,140,93,98,57,253
+216,http://www.group15_KD_tr_onto/TBU,Tilburg Universiteit railway station,TBU,51.5653,5.05139,1.0272727272727273,http://www.group15_KD_tr_onto/350,Gilze-Rijen,350,51.566,4.936,140,93,98,57,253
+217,http://www.group15_KD_tr_onto/TB,Tilburg railway station,TB,51.5606,5.08278,1.8253968253968254,http://www.group15_KD_tr_onto/350,Gilze-Rijen,350,51.566,4.936,140,93,98,57,253
+218,http://www.group15_KD_tr_onto/ZLW,Lage Zwaluwe railway station,ZLW,51.6906,4.66333,0.6917808219178082,http://www.group15_KD_tr_onto/350,Gilze-Rijen,350,51.566,4.936,140,93,98,57,253
+219,http://www.group15_KD_tr_onto/ZVB,Zevenbergen railway station,ZVB,51.6414,4.60972,0.7246376811594203,http://www.group15_KD_tr_onto/350,Gilze-Rijen,350,51.566,4.936,140,93,98,57,253
+220,http://www.group15_KD_tr_onto/BET,Best railway station,BET,51.5097,5.38889,0.5933333333333334,http://www.group15_KD_tr_onto/370,Eindhoven,370,51.451,5.377,120,95,86,24,244
+221,http://www.group15_KD_tr_onto/BMR,Boxmeer railway station,BMR,51.6444,5.93944,0.35526315789473684,http://www.group15_KD_tr_onto/370,Eindhoven,370,51.451,5.377,120,95,86,24,244
+222,http://www.group15_KD_tr_onto/BR,Blerick railway station,BR,51.3725,6.155,1.08,http://www.group15_KD_tr_onto/370,Eindhoven,370,51.451,5.377,120,95,86,24,244
+223,http://www.group15_KD_tr_onto/BTL,Boxtel railway station,BTL,51.5844,5.31889,0.7402597402597403,http://www.group15_KD_tr_onto/370,Eindhoven,370,51.451,5.377,120,95,86,24,244
+224,http://www.group15_KD_tr_onto/DN,Deurne railway station,DN,51.4558,5.78833,1.8333333333333333,http://www.group15_KD_tr_onto/370,Eindhoven,370,51.451,5.377,120,95,86,24,244
+225,http://www.group15_KD_tr_onto/EHS,Eindhoven Stadion railway station,EHS,51.443,5.46731,0.34,http://www.group15_KD_tr_onto/370,Eindhoven,370,51.451,5.377,120,95,86,24,244
+226,http://www.group15_KD_tr_onto/EHV,Eindhoven Centraal railway station,EHV,51.4428,5.48028,1.8232044198895028,http://www.group15_KD_tr_onto/370,Eindhoven,370,51.451,5.377,120,95,86,24,244
+227,http://www.group15_KD_tr_onto/GP,Geldrop railway station,GP,51.42,5.55111,0.5223880597014925,http://www.group15_KD_tr_onto/370,Eindhoven,370,51.451,5.377,120,95,86,24,244
+228,http://www.group15_KD_tr_onto/HMH,Helmond 't Hout railway station,HMH,51.4678,5.63083,1.0857142857142856,http://www.group15_KD_tr_onto/370,Eindhoven,370,51.451,5.377,120,95,86,24,244
+229,http://www.group15_KD_tr_onto/HM,Helmond railway station,HM,51.4756,5.66167,1.4375,http://www.group15_KD_tr_onto/370,Eindhoven,370,51.451,5.377,120,95,86,24,244
+230,http://www.group15_KD_tr_onto/HRT,Horst-Sevenum railway station,HRT,51.4267,6.04194,1.5135135135135136,http://www.group15_KD_tr_onto/370,Eindhoven,370,51.451,5.377,120,95,86,24,244
+231,http://www.group15_KD_tr_onto/HT,'s-Hertogenbosch railway station,HT,51.69,5.29333,0.8769230769230769,http://www.group15_KD_tr_onto/370,Eindhoven,370,51.451,5.377,120,95,86,24,244
+232,http://www.group15_KD_tr_onto/HZ,Heeze railway station,HZ,51.385,5.56944,0.0,http://www.group15_KD_tr_onto/370,Eindhoven,370,51.451,5.377,120,95,86,24,244
+233,http://www.group15_KD_tr_onto/MZ,Maarheeze railway station,MZ,51.3039,5.63028,0.5671641791044776,http://www.group15_KD_tr_onto/370,Eindhoven,370,51.451,5.377,120,95,86,24,244
+234,http://www.group15_KD_tr_onto/OW,Oss West railway station,OW,51.7581,5.50611,0.5308641975308642,http://www.group15_KD_tr_onto/370,Eindhoven,370,51.451,5.377,120,95,86,24,244
+235,http://www.group15_KD_tr_onto/O,Oss railway station,O,51.7653,5.53167,1.0484848484848486,http://www.group15_KD_tr_onto/370,Eindhoven,370,51.451,5.377,120,95,86,24,244
+236,http://www.group15_KD_tr_onto/RS,Rosmalen railway station,RS,51.715,5.36889,0.5432098765432098,http://www.group15_KD_tr_onto/370,Eindhoven,370,51.451,5.377,120,95,86,24,244
+237,http://www.group15_KD_tr_onto/TG,Tegelen railway station,TG,51.3411,6.14333,1.1710526315789473,http://www.group15_KD_tr_onto/370,Eindhoven,370,51.451,5.377,120,95,86,24,244
+238,http://www.group15_KD_tr_onto/VG,Vught railway station,VG,51.6547,5.29194,0.6172839506172839,http://www.group15_KD_tr_onto/370,Eindhoven,370,51.451,5.377,120,95,86,24,244
+239,http://www.group15_KD_tr_onto/VLB,Vierlingsbeek railway station,VLB,51.5922,5.99667,0.8552631578947368,http://www.group15_KD_tr_onto/370,Eindhoven,370,51.451,5.377,120,95,86,24,244
+240,http://www.group15_KD_tr_onto/VL,Venlo railway station,VL,51.3647,6.17139,1.0681818181818181,http://www.group15_KD_tr_onto/370,Eindhoven,370,51.451,5.377,120,95,86,24,244
+241,http://www.group15_KD_tr_onto/VRY,Venray railway station,VRY,51.5264,6.01417,0.8552631578947368,http://www.group15_KD_tr_onto/370,Eindhoven,370,51.451,5.377,120,95,86,24,244
+242,http://www.group15_KD_tr_onto/WT,Weert railway station,WT,51.2486,5.7025,0.8780487804878049,http://www.group15_KD_tr_onto/370,Eindhoven,370,51.451,5.377,120,95,86,24,244
+243,http://www.group15_KD_tr_onto/CVM,Chevremont railway station,CVM,50.8758,6.05944,0.0,http://www.group15_KD_tr_onto/380,Maastricht,380,50.906,5.762,120,97,72,50,236
+244,http://www.group15_KD_tr_onto/EDN,Eijsden railway station,EDN,50.772,5.71004,1.5555555555555556,http://www.group15_KD_tr_onto/380,Maastricht,380,50.906,5.762,120,97,72,50,236
+245,http://www.group15_KD_tr_onto/EGH,Eygelshoven railway station,EGH,50.8903,6.04556,0.0,http://www.group15_KD_tr_onto/380,Maastricht,380,50.906,5.762,120,97,72,50,236
+246,http://www.group15_KD_tr_onto/GLN,Geleen Oost railway station,GLN,50.9672,5.84306,0.17105263157894737,http://www.group15_KD_tr_onto/380,Maastricht,380,50.906,5.762,120,97,72,50,236
+247,http://www.group15_KD_tr_onto/HB,Hoensbroek railway station,HB,50.9053,5.93111,0.35526315789473684,http://www.group15_KD_tr_onto/380,Maastricht,380,50.906,5.762,120,97,72,50,236
+248,http://www.group15_KD_tr_onto/HRLW,Heerlen Woonboulevard railway station,HRLW,50.8961,5.95278,0.32051282051282054,http://www.group15_KD_tr_onto/380,Maastricht,380,50.906,5.762,120,97,72,50,236
+249,http://www.group15_KD_tr_onto/HRL,Heerlen railway station,HRL,50.8908,5.97472,0.27,http://www.group15_KD_tr_onto/380,Maastricht,380,50.906,5.762,120,97,72,50,236
+250,http://www.group15_KD_tr_onto/KMR,Klimmen-Ransdaal railway station,KMR,50.8667,5.89056,0.3076923076923077,http://www.group15_KD_tr_onto/380,Maastricht,380,50.906,5.762,120,97,72,50,236
+251,http://www.group15_KD_tr_onto/KRD,Kerkrade Centrum railway station,KRD,50.8614,6.0575,0.0,http://www.group15_KD_tr_onto/380,Maastricht,380,50.906,5.762,120,97,72,50,236
+252,http://www.group15_KD_tr_onto/LG,Landgraaf railway station,LG,50.8964,6.02,0.0,http://www.group15_KD_tr_onto/380,Maastricht,380,50.906,5.762,120,97,72,50,236
+253,http://www.group15_KD_tr_onto/MT,Maastricht railway station,MT,50.85,5.70528,0.6208333333333333,http://www.group15_KD_tr_onto/380,Maastricht,380,50.906,5.762,120,97,72,50,236
+254,http://www.group15_KD_tr_onto/NH,Nuth railway station,NH,50.9197,5.8925,0.17105263157894737,http://www.group15_KD_tr_onto/380,Maastricht,380,50.906,5.762,120,97,72,50,236
+255,http://www.group15_KD_tr_onto/RM,Roermond railway station,RM,51.1933,5.99472,0.9320388349514563,http://www.group15_KD_tr_onto/380,Maastricht,380,50.906,5.762,120,97,72,50,236
+256,http://www.group15_KD_tr_onto/RV,Reuver railway station,RV,51.2831,6.07944,0.9473684210526315,http://www.group15_KD_tr_onto/380,Maastricht,380,50.906,5.762,120,97,72,50,236
+257,http://www.group15_KD_tr_onto/SBK,Spaubeek railway station,SBK,50.9431,5.84972,0.4342105263157895,http://www.group15_KD_tr_onto/380,Maastricht,380,50.906,5.762,120,97,72,50,236
+258,http://www.group15_KD_tr_onto/SM,Swalmen railway station,SM,51.2358,6.0325,0.3157894736842105,http://www.group15_KD_tr_onto/380,Maastricht,380,50.906,5.762,120,97,72,50,236
+259,http://www.group15_KD_tr_onto/SN,Schinnen railway station,SN,50.9386,5.87611,0.5131578947368421,http://www.group15_KD_tr_onto/380,Maastricht,380,50.906,5.762,120,97,72,50,236
+260,http://www.group15_KD_tr_onto/SRN,Susteren railway station,SRN,51.0608,5.86278,0.7297297297297297,http://www.group15_KD_tr_onto/380,Maastricht,380,50.906,5.762,120,97,72,50,236
+261,http://www.group15_KD_tr_onto/STD,Sittard railway station,STD,51.0011,5.85833,0.6935483870967742,http://www.group15_KD_tr_onto/380,Maastricht,380,50.906,5.762,120,97,72,50,236
+262,http://www.group15_KD_tr_onto/VDL,Voerendaal railway station,VDL,50.8867,5.92944,0.20512820512820512,http://www.group15_KD_tr_onto/380,Maastricht,380,50.906,5.762,120,97,72,50,236
